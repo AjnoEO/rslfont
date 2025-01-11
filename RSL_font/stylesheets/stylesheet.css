@@ -613,17 +613,24 @@ ul.column {
 /* page styles */
 
 .asl {
-  font-size:   166%;
   font-family: ASL-Font;
+}
+
+.rsl {
+  font-family: RSL-Font;
+}
+
+.asl, .rsl {
+  font-size:   166%;
   line-height: 1;
   letter-spacing: 0px;
-  font-weight: normal;
+  font-weight: normal;  
 }
 
 .transcript {
   font-size:85%;
 }
-.transcript .asl {
+.transcript .asl, .transcript .rsl {
   line-height:1.25em;
   white-space:pre;
 }
