@@ -12,7 +12,7 @@
     </script>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Symbol Font for ASL" />
+    <meta name="description" content="Шрифт для записи русского жестового языка" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{page.root}}stylesheets/stylesheet.css">
     {{page_stylesheet}}
     
@@ -21,7 +21,7 @@
     <style>      
       @font-face {
         font-family: "RSL-Font";
-        src:         url('{{page.root}}sybol_font_for_rsl/symbol-font-for-rsl-shrift-rzhia');
+        src:         url('{{page.root}}symbol_font_for_rsl/symbol-font-for-rsl-shrift-rzhia.ttf');
       }
       
       @font-face {
@@ -105,7 +105,7 @@
       }
     </style>
     
-    <title>ASL Font: {{page.title}}</title>
+    <title>Шрифт РЖЯ: {{page.title}}</title>
   </head>
 
   <body>
@@ -113,10 +113,10 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/aslfont/">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/aslfont/">Репозиторий на GitHub</a>
 
-          <h1 id="project_title">Symbol Font for ASL</h1>
-          <h2 id="project_tagline">How can you read and write American Sign Language?</h2>
+          <h1 id="project_title">Шрифт для записи РЖЯ</h1>
+          <h2 id="project_tagline">Как писать и читать на русском жестовом языке?</h2>
 
         </header>
     </div>
@@ -124,52 +124,20 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section class="main_content inner">
-        <nav>
-          <ul class="inline">
-            <li><a class="{% if page.selected == 'intro'      %}selected{% endif %}" href="{{page.root}}index.html" >An Old Idea</a> &rarr; </li>
-            <li><a class="{% if page.selected == 'ways'       %}selected{% endif %}" href="{{page.root}}ways-to-write.html" >Ways to Write</a> &rarr; </li>
-            <li><a class="{% if page.selected == 'bigq'       %}selected{% endif %}" href="{{page.root}}write-asl-online.html" >The Big Question</a> &rarr; </li>
-            <li><a class="{% if page.selected == 'font'       %}selected{% endif %}" href="{{page.root}}whats-in-this-font.html" >What is in this font?</a> &rarr; </li>
-            <li><a class="{% if page.selected == 'tryit'      %}selected{% endif %}" href="{{page.root}}try-it.html">Try it!</a></li>
-          </ul>
-          {% if page.toplinks %}
-          <ul class="inline boxshadow-p">
-            <li><a class="{% if page.selected == 'elements'  %}selected{% endif %}" href="{{page.root}}elements-of-asl.html">Elements of ASL <span class="asl">5</span></a></li>
-            <li><a class="{% if page.selected == 'dictionary' %}selected{% endif %}" href="{{page.root}}dictionary.html">ASL Dictionary <span class="asl">P</span></a></li>
-            <li><a class="{% if page.selected == 'lesson1'    %}selected{% endif %}" href="{{page.root}}lesson1.html">Lessons</a></li>
-            <li><a class="{% if page.selected == 'facebook'   %}selected{% endif %}" href="https://www.facebook.com/pages/Symbol-Font-For-ASL/133478630170344">Facebook</a></li>
-          </ul>
-          {% endif %}
-        </nav>
+        {% include base_nav.html boxlinks=page.toplinks %}
+
         {{content}}
         
         <hr>
         
-        <nav>
-          <ul class="inline">
-            {{selected}}
-            <li><a class="{% if page.selected == 'intro'      %}selected{% endif %}" href="{{page.root}}index.html" >An Old Idea</a> &rarr; </li>
-            <li><a class="{% if page.selected == 'ways'       %}selected{% endif %}" href="{{page.root}}ways-to-write.html" >Ways to Write</a> &rarr; </li>
-            <li><a class="{% if page.selected == 'bigq'       %}selected{% endif %}" href="{{page.root}}write-asl-online.html" >The Big Question</a> &rarr; </li>
-            <li><a class="{% if page.selected == 'font'       %}selected{% endif %}" href="{{page.root}}whats-in-this-font.html" >What is in this font?</a> &rarr; </li>
-            <li><a class="{% if page.selected == 'tryit'      %}selected{% endif %}" href="{{page.root}}try-it.html">Try it!</a></li>
-          </ul>
-          <ul class="inline boxshadow-p">
-            <li><a class="{% if page.selected == 'elements'  %}selected{% endif %}" href="{{page.root}}elements-of-asl.html">Elements of ASL <span class="asl">5</span></a></li>
-            <li><a class="{% if page.selected == 'dictionary' %}selected{% endif %}" href="{{page.root}}dictionary.html">ASL Dictionary <span class="asl">P</span></a></li>
-            <li><a class="{% if page.selected == 'lesson1'    %}selected{% endif %}" href="{{page.root}}lesson1.html">Lessons</a></li>
-            <li><a class="{% if page.selected == 'facebook'   %}selected{% endif %}" href="https://www.facebook.com/pages/Symbol-Font-For-ASL/133478630170344">Facebook</a></li>
-            
-            
-          </ul>
-        </nav>
+        {% include base_nav.html boxlinks=true %}
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+        <p>Сайт опубликован через <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
@@ -177,15 +145,6 @@
       <script src="{{js}}"></script>
     {% endfor %}
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-40133707-1', 'github.io');
-      ga('send', 'pageview');
-
-    </script>
+    {% include google_analytics.html %}
   </body>
 </html>
