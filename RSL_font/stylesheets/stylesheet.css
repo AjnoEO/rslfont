@@ -175,11 +175,14 @@ pre, code {
   background-color: #fff;
 
   font-size: 14px;
-
+}
+pre, code, img
+{
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
 
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 pre, code, .monospace {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -188,14 +191,14 @@ pre, code, .monospace {
 pre {
   width: 100%;
   padding: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  /* box-shadow: 0 0 10px rgba(0,0,0,.1); */
   overflow: auto;
 }
 
 code {
   padding: 3px;
   margin: 0 3px;
-  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  /* box-shadow: 0 0 10px rgba(0,0,0,.1); */
 }
 
 pre code {
