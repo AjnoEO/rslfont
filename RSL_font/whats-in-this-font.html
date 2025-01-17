@@ -1,0 +1,223 @@
+---
+layout: default
+selected: font
+title: What is in this font?
+---
+
+<p style="text-align:left">
+  <a href="goals.html"><big>&larr; Ранее: <em>Цели шрифта</em></big></a>
+</p>
+
+<p>Для жестовых языков предлагалось <a href="ways-to-write.html">множество разных письменностей</a>. В этом проекте я хочу предложить в качестве альтернативы систему записи, подходящую для компьютеров.</p>
+
+<nav><strong>Смотрите также:</strong>
+<ul class="inline">
+  <li><a href="lesson1.html">Уроки</a></li>
+  <li><a href="reference.html">Полная инструкция</a></li>
+  <li><a href="https://github.com/ajnoeo/rslfont/archive/symbol_font_for_rsl.zip">Скачать шрифт</a></li>
+</ul>
+</nav>
+
+<div class="boxshadow" style="padding:.5em">
+  <div class="headline">
+    <p class="rsl">абвгдеёжзий<br>клмнопрстуф<br>хцчшщъыьэюя</p>
+    <div class="description">
+      <label style="font-size:120%;text-align:center;font-weight:bold;display:block">Дактильная азбука РЖЯ</label>
+      <p class="note">Если вы не видите изображения пальцевой азбуки, попробуйте открыть эту страницу в браузере Chrome, Firefox или Safari последней версии.</p>
+    </div>
+  </div>
+</div>
+
+  <div class="side boxshadow" style="padding: .5em">
+    <h4 style="margin-top:0">Установка и обсуждение</h4>
+    <p>Вы можете <a href="https://github.com/ajnoeo/rslfont/archive/install.zip">скачать шрифт</a> и установить на своё устройство.</p>
+    <hr>
+    <p>
+      Проект можно обсуждать в <a href="https://github.com/ajnoeo/rslfont/issues">обсуждениях на GitHub</a>
+      <br>
+      Мне интересно ваше мнение!
+    </p>
+    <hr>
+    <h4 style="margin-top:0">Уроки</h4>
+    <p>Если вы здесь впервые, советую попробовать <a href="lesson1.html">уроки</a>!</p>
+  </div>
+  
+  <h4 style="margin-top:0">Опа, формы руки!</h4>
+  <p>Изображения конфигураций РЖЯ, представленные сверху, входят в <a href="http://fontstruct.com/fontstructions/show/790283">шрифт РЖЯ</a>.</p>
+
+  <h4>Это очередной шрифт для дактиля?</h4>
+  <p>Нет! Этот шрифт &mdash; это полноценная система для записи всех компонентов жеста РЖЯ, а не только пальцевой азбуки.</p>
+
+  <hr>
+
+<blockquote>
+  Вместо того, чтобы читать теорию, можно освоить систему в последовательных уроках: <br><a href="lesson1.html"><big>Урок 1: Конфигурации &rarr;</big></a>
+</blockquote>
+
+<br>
+
+{% capture jump_to %}
+<nav><strong>Перейти к разделу:</strong>
+  <ul class="inline">
+    <!--  <li><a href="#Goals">Goals</a></li>
+  <li><a href="#SymbolTypes">Symbol Types</a></li>-->
+    <li><a href="#KeyboardLayout">Раскладка</a></li>
+    <li><a href="#CharacterMapping">Соответствие символов</a></li>
+    <li><a href="#WritingSigns">Запись жеста</a></li>
+  </ul>
+</nav>
+{% endcapture %}
+
+{{jump_to}}
+
+<hr>
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=What+is+in+this+font?" class="feedback">Feedback?</a> -->
+<h3 id="WhatsInThisFont">Что есть в этом шрифте?</h3>
+
+<!-- <p class="asl medium" style="text-align:center">
+` 1 2 3 4 5 6 7     8 9 0 - =<br>
+q w e r t y u i o p [ ] \<br>
+a s d f g h j k l ; '<br>
+z x c v b n m , . /<br>
+<br>
+~ ! @ # $ % ^ &amp; * ( ) _ +<br>
+Q W E R T Y U I O P { } |<br>
+A S D F G H J K L : "<br>
+Z X C V B N M &lt; &gt; ?<br>
+</p> -->
+<h4 id="KeyboardLayout">Раскладка</h4>
+<h5>Раскладка для русского языка (ЙЦУКЕН)</h5>
+<p class="keyboard" style="text-align:center;">
+<span style="background-color:#fff;border-top:4px solid #fff;border-bottom:2px solid #fff;">
+&nbsp;ё<sup>Ё</sup>1<sup>!</sup>2<sup>"</sup>3<sup>&numero;</sup>4<sup>;</sup>5<sup>%</sup>6<sup>:</sup>7<sup>?</sup>8<sup>*</sup>9<sup>(</sup>0<sup>)</sup>-<sup>_</sup>=<sup>+</sup><br>
+&nbsp;й<sup>Й</sup>ц<sup>Ц</sup>у<sup>У</sup>к<sup>К</sup>е<sup>Е</sup>н<sup>Н</sup>г<sup>Г</sup>ш<sup>Ш</sup>щ<sup>Щ</sup>з<sup>З</sup>х<sup>Х</sup>ъ<sup>Ъ</sup>\<sup>/</sup><br>
+&nbsp;ф<sup>Ф</sup>ы<sup>Ы</sup>в<sup>В</sup>а<sup>А</sup>п<sup>П</sup>р<sup>Р</sup>о<sup>О</sup>л<sup>Л</sup>д<sup>Д</sup>ж<sup>Ж</sup>э<sup>Э</sup><br>
+&nbsp;я<sup>Я</sup>ч<sup>Ч</sup>с<sup>С</sup>м<sup>М</sup>и<sup>И</sup>т<sup>Т</sup>ь<sup>Ь</sup>б<sup>Б</sup>ю<sup>Ю</sup>.<sup>,</sup><br>
+</span>
+</p>
+
+<h5>Символы этого шрифта</h5>
+<p class="rsl keyboard" style="text-align:center;">
+<span style="background-color:#fff;border-top:4px solid #fff;border-bottom:2px solid #fff;">
+&nbsp;ё<sup>Ё</sup>1<sup>!</sup>2<sup>"</sup>3<sup>&numero;</sup>4<sup>;</sup>5<sup>%</sup>6<sup>:</sup>7<sup>?</sup>8<sup>*</sup>9<sup>(</sup>0<sup>)</sup>-<sup>_</sup>=<sup>+</sup><br>
+&nbsp;й<sup>Й</sup>ц<sup>Ц</sup><span class="letter-key">у<sup>У</sup>к<sup>К</sup>е<sup>Е</sup>н<sup>Н</sup></span>г<sup>Г</sup><span class="letter-key">ш<sup>Ш</sup></span>щ<sup>Щ</sup>з<sup>З</sup>х<sup>Х</sup>ъ<sup>Ъ</sup>\<sup>/</sup><br>
+&nbsp;<span class="letter-key">ф<sup>Ф</sup>ы<sup>Ы</sup>в<sup>В</sup>а<sup>А</sup>п<sup>П</sup>р<sup>Р</sup>о<sup>О</sup>л<sup>Л</sup></span>д<sup>Д</sup>ж<sup>Ж</sup>э<sup>Э</sup><br>
+&nbsp;я<sup>Я</sup><span class="letter-key">ч<sup>Ч</sup>с<sup>С</sup>м<sup>М</sup>и<sup>И</sup></span>т<sup>Т</sup>ь<sup>Ь</sup>б<sup>Б</sup>ю<sup>Ю</sup>.<sup>,</sup><br>
+</span>
+</span>
+</p>
+
+{{jump_to}}
+
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Symbol+Usage" class="feedback">Feedback?</a> -->
+<h4 id="CharacterMapping">Соответсвие символов</h4>
+<h5>Конфигурации</h5>
+
+<div>
+<div style="clear:both;float:right;width:30%;margin-left:20px" class="boxshadow">
+<p class="rsl medium" style="text-align:center">12<span class="red">3</span>45<br><span class="blue">678</span></p>
+</div>
+<p>Клавишам от <strong>1</strong> до <strong>5</strong> соответствуют конфигурации счёта <em>от указательного пальца</em>. Обратите внимание: Конфигурация <strong class="red">3</strong> не соответствует стандартной форме руки при жесте &laquo;три&raquo;. Клавишам <strong class="blue">6</strong>&ndash;<strong class="blue">8</strong> соответсвуют конфигурации правой руки при соответствующих жестах, т.е. конфигурации при счёте от большого пальца</p>
+</div>
+
+<div>
+<div style="float:right;width:55%;margin-left:20px" class="boxshadow">
+<p class="rsl medium" style="text-align:center">абв<span class="red">г</span><span class="blue">д</span>е<span class="blue">ё</span>ж<span class="blue">з</span>и<span class="blue">й</span><br>к<span class="red">лм</span>но<span class="red">п</span>рс<span class="red">т</span>уф<br>х<span class="blue">ц</span>чш<span class="blue">щъ</span>ы<span class="blue">ь</span>эюя</p>
+</div>
+<p>Клавишам <strong>маленьких букв</strong> соответствуют конфигурации из дактильной азбуки. В частности, имеются повёрнутые символы для букв <strong class="red">г л м п</strong> и <strong class="red">т</strong> и подписаны символы для букв с движением: <strong class="blue">д ё з й ц щ ъ</strong> и <strong class="blue">ь</strong>. Символы для <strong>к</strong> и <strong>я</strong> не отражают движение/поворот.</p>
+</div>
+
+<div>
+<div style="float:right;width:55%;margin-left:20px" class="boxshadow">
+<p class="rsl medium" style="text-align:center"><span class="blue">А&emsp;В</span>&emsp;&emsp;<span class="red">Е</span>&emsp;&emsp;&emsp;И&emsp;<br>К<span class="red">Л</span>МНО<span class="blue">П</span><span class="red">Р</span><span class="blue">С&emsp;У</span><span class="red">Ф</span><br>&emsp;&emsp;ЧШ&emsp;&emsp;<span class="blue">Ы</span>&emsp;&emsp;&emsp;&emsp;</p>
+</div>
+<p>Все остальные конфигурации РЖЯ сопоставлены заглавным буквам. Для многих можно проследить некоторую логику: <strong class="blue">А В П С У</strong> и <strong class="blue">Ы</strong> отличаются положением большого пальца; <strong class="red">Е Л Р</strong> и <strong class="red">Ф</strong> более &laquo;открыты&raquo; или более &laquo;закрыты&raquo;. Не всем заглавным буквам сопоставлены конфигурации.</p>
+</div>
+
+<p style="text-align:center"><big>Подробнее <a href="reference.html#Handshapes">о записи конфигураций &rarr;</a></big></p>
+
+<h5>Стрелки</h5>
+<div class="floatr boxshadow-p" style="width:30%">
+  <p class="rsl medium" style="text-align:center">
+    Щ Ь /<br>
+    Б&nbsp;&nbsp;&nbsp;Ю<br>
+    З _ \<br>
+  </p>
+</div>
+<p>Горизонтальные стрелки соответствуют символам <strong>Б</strong> и <strong>Ю</strong> по аналогии с английской раскладкой QWERTY (<strong>&lt;</strong> и <strong>&gt;</strong>). Вертикальные стрелки соответсвуют символам <strong>Ь</strong> и <strong>_</strong>, четыре диагональные &mdash; символам <strong>Щ / З</strong> и <strong>\</strong>.</p>
+
+<p style="text-align:center;clear:both"><big>Подробнее <a href="reference.html#Directions">о записи направлений &rarr;</a></big></p>
+
+<h5>Ориентации</h5>
+<div class="floatr boxshadow-p big" style="width:30%" >
+  <p class="rsl big" style="text-align:center">
+    " = Э - % Ж<br>
+    . Ё
+  </p>
+</div>
+<p>Ориентация кисти отображается при помощи шести символов, изображающих ладонь и пальцы. В шрифте они соответствуют символам <strong>" = Э - %</strong> и <strong>Ж</strong></p>
+<p>Кружочки, изображающие большой палец, соответствуют символам <strong>.</strong> и <strong>Ё</strong></p>
+
+<p style="text-align:center;clear:both"><big>Подробнее <a href="reference.html#Orientation">о записи ориентаций &rarr;</a></big></p>
+
+<h5>Прочие символы</h5>  
+<div class="floatr boxshadow-p" style="width:30%">
+  <p class="rsl medium" style="text-align:center">
+    № Г Д Т Я<br>
+    ! ? , ; : * +<br>
+    ( ) Й Ц Х Ъ
+  </p>
+</div>
+<p>Многие спец. символы похожи на знаки пунктуации:</p>
+<ul>
+  <li>Введены новые символы, в раскладке они соответствуют символам <strong>№ Г Д Т Я</strong></li>
+  <li>Символы <strong style="letter-spacing: 0.1em;">! ? , ; : *</strong> и <strong>+</strong>, а также круглые скобки <strong>(</strong> и <strong>)</strong> остались практически неизменными</li>
+  <li>Квадратных и фигурных скобок в русской раскладке нет, они соответствуют символам <strong>Й Ц Х Ъ</strong></li>
+</ul>
+
+<p style="text-align:center;clear:both"><big>Подробнее <a href="reference.html">о символах шрифта &rarr;</a></big></p>
+
+
+<br>
+
+<h4 id="WritingSigns">Запись жеста</h4>
+  
+<p>Компоненты жеста РЖЯ составляются из символов, доступных в этом шрифте. Чтобы записать жест, нужно указать его компоненты с нужной степенью подробности.</p>
+<p>Простой пример &mdash; <a href="https://spreadthesign.ru/1358">жест &laquo;Кошка&raquo;</a>. Если вы знаете, как записывается каждый из компонентов жеста, всё что нужно, чтобы изобразить жест целиком &mdash; это записать их подряд.</p>
+
+<div class="boxshadow-p medium">
+  <dl class="inline inline1b">
+    <dt class="rsl">(Г..)</dt>       <dd>Щека (локализация)</dd>
+    <dt class="rsl">Т</dt>           <dd>Смахивание (тип контакта)</dd>
+    <dt class="rsl">.Э</dt>          <dd>Пальцы вверх, ладонь влево (ориентация)</dd>
+    <dt class="rsl">о</dt>           <dd>Форма руки &laquo;О&raquo; (конфигурация)</dd>
+    <dt class="rsl">Ю</dt>           <dd>Направленность вправо (движение)</dd>
+    <dt class="rsl">(|..)Т.ЭоЮЮ</dt> <dd>&laquo;Кошка&raquo;</dd>
+  </dl>
+</div>
+
+{{jump_to}}
+
+
+<h5>Опробуйте!</h5>
+<blockquote>Введите <strong>( Г . . ) Т . Э о Ю Ю</strong> в этом поле, чтобы получить запись жеста &laquo;Кошка&raquo;.
+<input class="tryit" value="" placeholder="(Г..)Т.ЭоЮЮ">
+</blockquote>
+
+<p>Это подробная запись слова &laquo;Кошка&raquo;. Если вы пишете сообщение кому-нибудь, кто уже знает РЖЯ, запись можно упростить &mdash; получатель всё равно поймёт, какой жест вы имели в виду.</p>
+
+<div class="boxshadow-p medium">
+  <dl class="inline inline1b">
+    <dt class="rsl">(Г..)оЮЮ</dt> <dd>&laquo;Кошка&raquo; (сокращение)</dd>
+  </dl>
+</div>
+
+<h5>Опробуйте!</h5>
+<blockquote>Введите <strong>( Г . . ) о Ю Ю</strong>, чтобы получить один из более коротких способов записи жеста.
+<input class="tryit" value="" placeholder="(Г..)оЮЮ">
+</blockquote>
+
+<p style="text-align:right">
+  <a href="try-it.html"><big>Далее: <em>Опробуйте!</em> &rarr;</big></a>
+</p>
+

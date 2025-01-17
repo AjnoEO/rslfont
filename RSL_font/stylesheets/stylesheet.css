@@ -176,7 +176,7 @@ pre, code {
 
   font-size: 14px;
 }
-pre, code, img
+pre, code, img, .boxshadow, .boxshadow-p
 {
   border-radius: 5px;
   -moz-border-radius: 5px;
@@ -211,10 +211,6 @@ blockquote {
   margin-bottom: 20px;
   padding: 0 0 0 20px;
   border-left: 3px solid #bbb;
-}
-
-ul, ol, dl {
-  margin-bottom: 15px
 }
 
 ul, ol {
@@ -424,7 +420,7 @@ Full-Width Styles
   padding-right:.5em;
 }
 
-.boxshadow, .boxshadow-p, a.selected, a.button, #dictionary section {
+a.selected, a.button, #dictionary section {
   box-shadow: 0 0 5px #ebebeb;
   -webkit-box-shadow: 0 0 5px #ebebeb;
   -moz-box-shadow: 0 0 5px #ebebeb;
@@ -623,7 +619,7 @@ ul.column {
   font-family: RSL-Font;
 }
 
-.asl, .rsl {
+.asl {
   font-size:   166%;
   line-height: 1;
   letter-spacing: 0px;
@@ -636,6 +632,14 @@ ul.column {
 .transcript .asl, .transcript .rsl {
   line-height:1.25em;
   white-space:pre;
+}
+
+.rsl.keyboard {
+  letter-spacing: 0.3em;
+  font-size: 140%;
+}
+.letter-key {
+  letter-spacing: 0.05em;
 }
 
 .transcript .english {
@@ -667,10 +671,10 @@ ul.column {
 }
 
 .medium {
-  font-size: 125%;
+  font-size: 150%;
 }
 .medium dd {
-  font-size: 80%;
+  font-size: 65%;
 }
 .medium dd.asl {
   font-size: 166%;
@@ -761,7 +765,7 @@ nav ul.inline {
 .quiz {
   text-align:left;
   font-size:200%;
-  font-family: ASL-Font;
+  font-family: RSL-Font;
   width:100%;
   padding:.25em;
   margin-bottom:.5em;
@@ -777,8 +781,8 @@ nav ul.inline {
 
 .tryit {
   text-align:center;
-  font-size:32px;
-  font-family: ASL-Font;
+  font-size:24px;
+  font-family: RSL-Font;
   width:100%;
   padding:.25em;
   margin-bottom:.5em;
