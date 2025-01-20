@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    var rand = function () {
+        var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        var s = '';
+        for (var i = 0; i < 32; i++)
+            s += possible.charAt(Math.floor(Math.random() * possible.length));
+        return s;
+    }
+
+
     if (!$.cookie('aslfont-session')) {
         $.cookie('aslfont-session', rand());
     }
