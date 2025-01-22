@@ -2,14 +2,38 @@
 <div class="boxshadow-p medium">
     <dl class="inline inline{{include.columns}}b">
         <dt class="rsl">!</dt>
-        <dd>Ударить{% if include.examples %} {{br}}<em>(напр. сразу, глупый)</em>{% endif %}</dd>
+        <dd>Ударить
+            {% if include.examples %} {{br}}
+            <em>(напр. {% include sign.html id=6829 word="сразу" %}, {% include sign.html id=1281 word="глупый" %})</em>
+            {% endif %}
+        </dd>
         <dt class="rsl">;</dt>
-        <dd>Тереть{% if include.examples %} {{br}}<em>(напр. бабушка, медленный)</em>{% endif %}</dd>
+        <dd>
+            Тереть
+            {% if include.examples %} {{br}}
+            <em>(напр. {% include sign.html id=1438 word="бабушка" %}, {% include sign.html id=6892 word="медленно" %})</em>
+            {% endif %}
+        </dd>
         <dt class="rsl">Ц</dt>
-        <dd>Смахнуть{% if include.examples %} {{br}}<em>(напр. купить, родной)</em>{% endif %}</dd>
+        <dd>
+            Смахнуть
+            {% if include.examples %} {{br}}
+            <em>(напр. {% include sign.html id=1559 word="купить" %}, {% include sign.html id=9544 word="родной" %})</em>
+            {% endif %}
+        </dd>
         <dt class="rsl">*</dt>
-        <dd>Коснуться{% if include.examples %} {{br}}<em>(напр. город, пробовать)</em>{% endif %}</dd>
+        <dd>
+            Коснуться
+            {% if include.examples %} {{br}}
+            <em>(напр. {% include sign.html id=413 word="город" %}, {% include sign.html id=21652 word="пробовать" %})</em>
+            {% endif %}
+        </dd>
         <dt class="rsl">+</dt>
-        <dd>Держать/щипать{% if include.examples %} {{br}}<em>(напр. дружный, кожа)</em>{% endif %}</dd>
+        <dd>
+            Держать/щипать
+            {% if include.examples %} {{br}}
+            <em>({% include sign.html id=12127 word="дружба" %}, {% include sign.html id=1573 word="кожа" %})</em>
+            {% endif %}
+        </dd>
     </dl>
 </div>
