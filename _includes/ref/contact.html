@@ -1,0 +1,15 @@
+{% capture br %}{% if include.columns >= 2 %}<br>{% endif %}{% endcapture %}
+<div class="boxshadow-p medium">
+    <dl class="inline inline{{include.columns}}b">
+        <dt class="rsl">!</dt>
+        <dd>Ударить{% if include.examples %} {{br}}<em>(напр. сразу, глупый)</em>{% endif %}</dd>
+        <dt class="rsl">;</dt>
+        <dd>Тереть{% if include.examples %} {{br}}<em>(напр. бабушка, медленный)</em>{% endif %}</dd>
+        <dt class="rsl">Ц</dt>
+        <dd>Смахнуть{% if include.examples %} {{br}}<em>(напр. купить, родной)</em>{% endif %}</dd>
+        <dt class="rsl">*</dt>
+        <dd>Коснуться{% if include.examples %} {{br}}<em>(напр. город, пробовать)</em>{% endif %}</dd>
+        <dt class="rsl">+</dt>
+        <dd>Держать/щипать{% if include.examples %} {{br}}<em>(напр. дружный, кожа)</em>{% endif %}</dd>
+    </dl>
+</div>

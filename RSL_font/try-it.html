@@ -58,25 +58,13 @@ javascripts:
 
 <div data-content-for="Handshapes">
   <h4 id="Handshapes">Конфигурация</h4>
-  <div class="boxshadow-p medium" style="font-family:monospace">
-    <dl class="inline inline1">
-      <dt class="rsl">а 6</dt>         <dd>а 6</dd>
-      <dt class="rsl">1 х А</dt>       <dd>1 х А</dd>
-      <dt class="rsl">7 О э К Ч о</dt> <dd>7 О э К Ч о</dd>
-      <dt class="rsl">к 2 б Л я</dt>   <dd>к 2 б Л я</dd>
-      <dt class="rsl">ш 3 П 8 М ч</dt> <dd>ш 3 П 8 М ч</dd>
-      <dt class="rsl">В 4 н р Р Н</dt> <dd>В 4 н р Р Н</dd>
-      <dt class="rsl">в 5 С И Е</dt>   <dd>в 5 С И Е</dd>
-      <dt class="rsl">Ф с е ф Ш ж</dt> <dd>Ф с е ф Ш ж</dd>
-      <dt class="rsl">У ю ы Ы у и</dt> <dd>У ю ы Ы у и</dd>
-    </dl>
-  </div>
+  {% include ref/handshapes.html %}
 </div>
 
 <div data-content-for="Orientation">
   <h4 id="Orientation">Ориентация</h4>
   <label style="display:block;font-style:italic;clear:both">Самые частые варианты поворота рук</label>
-  <img src="images/common_orientations2.png">
+  {% include ref/orientation.html %}
 </div>
 
 <div data-content-for="Locations">
@@ -103,61 +91,35 @@ javascripts:
   </div>
 
   <h5 id="Contact">Тип контакта</h5>
-  <div class="boxshadow-p medium">
-    <dl class="inline inline3b">
-      <dt class="rsl">!</dt>   <dd>Ударить</dd>
-      <dt class="rsl">;</dt>   <dd>Тереть</dd>
-      <dt class="rsl">Т</dt>   <dd>Смахнуть</dd>
-      <dt class="rsl">*</dt>   <dd>Коснуться</dd>
-      <dt class="rsl">+</dt>   <dd>Держать/щипать</dd>
-    </dl>
-  </div>
+  {% include ref/contact.html columns=3 examples=false %}
 
   <h5 id="NonDominant">Движение неведущей руки</h5>
-  <div class="boxshadow-p medium">
-    <dl class="inline inline2">
-      <dt class="rsl">)</dt>    <dd>Вместе с ведущей<br><em>(напр. дружный, задержка)</em></dd>
-      <dt class="rsl">Я</dt>    <dd>Противоположное <br><em>(напр. велосипед, менять)</em></dd>
-      <dt class="rsl">ЪХ</dt>   <dd>Симметричное <br><em>(напр. семья, встретиться)</em></dd>
-      <dt class="rsl">ЯЯ</dt>   <dd>Чередующееся <br><em>(напр. договор, целоваться)</em></dd>
-    </dl>
-  </div>
+  {% include ref/non-dominant.html columns=2 %}
 </div>
 
 <div data-content-for="OtherModifiers">
   <h4 id="OtherModifiers">Прочие модификации</h4>
-  <div class="boxshadow-p medium">
-    <dl class="inline inline2">
-      <dt class="rsl">?</dt>     <dd>Согнуть пальцы</dd>
-      <dt class="rsl">??</dt>    <dd>Шевелить/тереть пальцами</dd>
-      <dt class="rsl">!</dt>     <dd>Выразительно</dd>
-      <dt class="rsl">;</dt>     <dd>Пауза</dd>
-      <dt class="rsl">(!)</dt>   <dd>Большая амплитуда</dd>
-      <dt class="rsl">(;)</dt>   <dd>Маленькая амплитуда</dd>
-      <dt class="rsl">{!}</dt>   <dd>Быстрое движение</dd>
-      <dt class="rsl">{;}</dt>   <dd>Медленное движение</dd>
-    </dl>
-  </div>
+  {% include ref/modifiers.html %}
 
   <h4>Немануальные компоненты</h4>
   <div class="boxshadow-p medium">
     <dl class="inline inline2">
-      <dt class="rsl">:%Г</dt>        <dd>Нейтральное выражение</dd>
-      <dt class="rsl">:%ЪХ</dt>       <dd>Дрожать губами (брр)</dd>
-      <dt class="rsl">:%()%ЦЙ</dt>    <dd>АП</dd>
-      <dt class="rsl">:%Ц(%ЦЭЙ%*</dt> <dd>ВНУ</dd>
-      <dt class="rsl">(:%Г</dt>       <dd>&laquo;Сделал?&raquo;</dd>
-      <dt class="rsl">Ъ:%Г</dt>       <dd>&laquo;Что сделал?&raquo;</dd>
-      <dt class="rsl">):Х%Г</dt>      <dd>Неприязнь</dd>
-      <dt class="rsl">(Х:Ъ%()</dt>    <dd>Удивление</dd>
-      <dt class="rsl">Ц:Й%ЦЙ</dt>     <dd>Подозрение</dd>
-      <dt class="rsl">Ц:%ХЪ</dt>      <dd>Непринуждённость</dd>
+      <dt class="rsl">:%Й</dt>        <dd>Нейтральное выражение</dd>
+      <dt class="rsl">:%09</dt>       <dd>Дрожать губами (брр)</dd>
+      <dt class="rsl">:%()%ЪХ</dt>    <dd>АП</dd>
+      <dt class="rsl">:%Ъ(%ЪЭХ%*</dt> <dd>ВНУ</dd>
+      <dt class="rsl">(:%Й</dt>       <dd>&laquo;Сделал?&raquo;</dd>
+      <dt class="rsl">0:%Й</dt>       <dd>&laquo;Что сделал?&raquo;</dd>
+      <dt class="rsl">0:9%Й</dt>      <dd>Неприязнь</dd>
+      <dt class="rsl">(9:0%()</dt>    <dd>Удивление</dd>
+      <dt class="rsl">Ъ:Х%ЪХ</dt>     <dd>Подозрение</dd>
+      <dt class="rsl">Ъ:%9ЪХ0</dt>    <dd>Непринуждённость</dd>
     </dl>
     <dl class="inline inline2">
       <dt class="rsl">(__)</dt>       <dd>Кивать головой</dd>
       <dt class="rsl">(БЮ)</dt>       <dd>Мотать головой</dd>
-      <dt class="rsl">ХБЪ</dt>        <dd>Повернуться телом влево</dd>
-      <dt class="rsl">ХЬЪ</dt>        <dd>Пожать плечами</dd>
+      <dt class="rsl">9Б0</dt>        <dd>Повернуться телом влево</dd>
+      <dt class="rsl">9Ь0</dt>        <dd>Пожать плечами</dd>
     </dl>
   </div>
 </div>
