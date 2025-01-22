@@ -1,0 +1,674 @@
+---
+layout: default
+title: Справка
+toplinks: true
+---
+<h3 id="SymbolReference">Справка</h3>
+
+<h4 id="BuildingSymbols">Запись компонентов</h4>
+
+<p>Каждый символ конфигурации соответствуют своему символу (букве или цифре). Остальные компоненты жеста (ориентацию, локализацию) необходимо записывать, комбинируя несколько символов шрифта.</p>
+
+
+{% capture jump_to %}
+<nav>
+  <label style="display: block;"><strong>Перейти к разделу:</strong></label>
+  <dl class="columns3">
+    <dt>Положение:</dt>
+    <dd>
+      <ul>
+        <li><a href="#Handshapes">Конфигурация</a></li>
+        <li><a href="#Orientation">Ориентация</a></li>
+        <li><a href="#Locations">Локализация</a></li>
+        <li><a href="#RelativeLocations">Относительная локализация</a></li>
+        <li><a href="#ReferencePoints">Локус</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="columns3">
+    <dt>Движение:</dt>
+    <dd>
+      <ul class="">
+        <li><a href="#Directions">Направление</a></li>
+        <li><a href="#Contact">Тип контакта</a></li>
+        <li><a href="#CircularMotion">Круговое движение</a></li>
+        <li><a href="#NonDominantHand">Неведущая рука</a></li>
+        <li><a href="#OtherModifiers">Прочие модификации</a></li>
+        <li><a href="#NonManual">Немануальные компоненты</a></li>
+      </ul>
+    </dd>
+  </dl>
+  <dl class="columns3">
+    <dt>Последовательность:</dt>
+    <dd>
+      <ul class="">
+        <li><a href="#CombiningSymbols">Совмещение символов</a></li>
+        <li><a href="#Frames">Кадры</a></li>
+        <li><a href="#Timelines">Таймлайны</a></li>
+        <li><a href="#Simplifying">Сокращение</a></li>
+      </ul>
+    </dd>
+  </dl>
+</nav>
+{% endcapture %}
+
+{{jump_to}}
+
+<br style="clear:both">
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Handshapes" class="feedback">Feedback?</a> -->
+<h4 id="Handshapes">Конфигурация</h4>
+<br style="clear:both">
+<div class="floatr medium" style="width:55%;text-align:center">
+  <div class="boxshadow-p">
+    <p class="rsl">
+      <span class="red">г л м п т</span><br>
+      7 2 3 к ш<br>
+      <span class="blue">д ё з й ц щ ъ ь</span><br>
+      к е 1 и к ш 7 7<br>
+    </p>
+  </div>
+</div>
+
+{% capture fingerspelling_only %}<strong class="red">г</strong> <strong class="blue">д ё з й</strong> <strong class="red">л м п т</strong> <strong class="blue">ц щ ъ</strong> и <strong class="blue">ь</strong>{% endcapture %}
+
+<p><strong>Совет:</strong> Символы {{fingerspelling_only}} используйте только при записи дактиля. Соответствующие конфигурации в жестах записывайте при помощи символов <strong>1 2 3 7 е и к</strong> и <strong>ш</strong>.</p>
+
+<p style="clear:both">Ниже представлены все конфигурации, имеющиеся в шрифте, сгруппированные по схожести (кроме {{fingerspelling_only}}).</p>
+{% include ref/handshapes.html %}
+
+<h5>Опробуйте!</h5>
+<blockquote>Введите букву или цифру чтобы посмотреть, как выглядит каждый из символов:
+<input class="tryit" value="ае1в5">
+</blockquote>
+
+
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Orientation" class="feedback">Feedback?</a> -->
+<h4 id="Orientation">Ориентация</h4>
+<!-- <br style="clear:both"> -->
+<div class="floatr big" style="width:55%">
+  <div class="boxshadow-p big">
+    <p class="rsl" style="text-align:center">
+      .Э&nbsp;&nbsp;Э. ." ". .Ж Ж.  <br>
+      ЁЭ&nbsp;&nbsp;ЭЁ Ё" "Ё ЁЖ ЖЁ  <br>
+      .- -.            .= =. .% %.  <br>
+      Ё- -Ё            Ё= =Ё Ё% %Ё  <br>
+    </p>
+  </div>
+</div>
+
+<p>Ориентация всегда записывается двумя символами: символом пальцев и символом большого пальца. Имеется шесть символов пальцев (<strong>Э - " = Ж</strong> и <strong>%</strong>) и два символа большого пальца (<strong>Ё</strong> и <strong>.</strong>). Так как символ большого пальца может быть как слева, так и справа от символа пальцев, в сумме можно записать 24 различных ориентации.</p>
+
+<div style="float:right;width:55%;margin-left:20px;margin-bottom:1.5em" class="">
+  <label style="display:block;text-align:center">24 ориентации (для правой руки)</label>
+  <img src="images/righthand-orientation.png"> 
+</div>
+
+<p>Слева представлены все возможные записи и соответствующие им ориентации правой руки. Чтобы получить симметричную ориентацию левой руки, достаточно поменять символы местами.</p>
+
+<p>Конечно, некоторые ориентации неудобны и поэтому встречаются гораздо реже других.</p>
+
+<div style="text-align:center;clear:both">
+<label style="display:block;">9 самых частых ориентаций (для обеих рук)</label>
+{% include ref/orientation.html %}
+</div>
+
+<h5>Опробуйте!</h5>
+<blockquote>Используйте символы <strong>Э - " = Ж % .</strong> и <strong>Ё</strong>, чтобы изобразить ориентацию руки:
+<input class="tryit" value='."".'>
+</blockquote>
+
+<br style="clear:both">
+
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Locations" class="feedback">Feedback?</a> -->
+<h4 id="Locations">Локализация</h4>
+<p style="clear:both">Круглые скобки <strong>(</strong> и <strong>)</strong>, фигурные скобки <strong>{</strong> и <strong>}</strong> (<strong>9</strong> и <strong>0</strong>), вертикальная черта <strong>|</strong> (<strong>Й</strong>) и точки (символы большого пальца <strong>.</strong> и <strong>Ё</strong>) вместе изображают различные места выполнения жеста на теле.</p>
+
+<p style="text-align:center">
+  <label style="display:block;">Локализация на голове, теле и неведущей руке</label>
+  <a href="images/locations4.png"><img src="images/locations4.png" style="width:350px;margin:auto"></a>
+</p>
+
+<h5>Локализация на голове</h5>
+<p>Точки и черта в круглых скобках <strong>( )</strong> обозначают места на лице и голове.</p>
+<div class="medium">
+  <dl class="inline inline3 boxshadow-p">
+    <dt class="rsl">(Ё)</dt>    <dd>лоб</dd>
+    <dt class="rsl">(ЁЁ)</dt>   <dd>висок</dd>
+    <dt class="rsl">(ЁЁЁ)</dt>  <dd>затылок</dd>
+    <dt class="rsl">(Й)</dt>    <dd>нос</dd>
+    <dt class="rsl">(ЙЁ)</dt>   <dd>глаз</dd>
+    <dt class="rsl">(ЙЁЁ)</dt>  <dd>ухо</dd>
+    <dt class="rsl"></dt>       <dd></dd>
+    <dt class="rsl">(Й.)</dt>   <dd>ноздря</dd>
+    <dt class="rsl">(Й..)</dt>  <dd>щека</dd>
+    <dt class="rsl">(.)</dt>    <dd>подбородок</dd>
+    <dt class="rsl">(..)</dt>   <dd>уголок рта</dd>
+    <dt class="rsl">(...)</dt>  <dd>челюсть</dd>
+  </dl>
+</div>
+
+<h5>Локализация на теле и руке</h5>
+
+<p>Точки и черта в фигурных скобках <strong>{ }</strong> обозначают места на теле и неведущей руке.</p>
+
+<div class="medium">
+  <dl class="inline inline4 boxshadow-p">
+    <dt class="rsl">9ЁЙЙ0</dt>  <dd>плечо <small>(левое)</small></dd>
+    <dt class="rsl">9ЁЁЁ0</dt>  <dd>горло</dd>
+    <dt class="rsl">9ЁЁ0</dt>   <dd>бок шеи</dd>
+    <dt class="rsl">9Ё0</dt>    <dd>плечо <small>(правое)</small></dd>
+    <dt class="rsl">9ЙЙ0</dt>   <dd>плечо <small>(рука)</small></dd>
+    <dt class="rsl">9ЁЙ0</dt>   <dd>грудь <small>(слева)</small></dd>
+    <dt class="rsl">9Й0</dt>    <dd>грудь <small>(центр)</small></dd>
+    <dt class="rsl">9ЙЁ0</dt>   <dd>грудь <small>(справа)</small></dd>
+    <dt class="rsl">9.ЙЙ0</dt>  <dd>локоть</dd>
+    <dt class="rsl"></dt>       <dd></dd>
+    <dt class="rsl">9Й.Й0</dt>  <dd>живот</dd>
+    <dt class="rsl">9Й.0</dt>   <dd>поясница</dd>
+    <dt class="rsl">9...0</dt>  <dd>предплечье</dd>
+    <dt class="rsl">9..0</dt>   <dd>запястье</dd>
+    <dt class="rsl">9.0</dt>    <dd style="width: 40%;">тыльная сторона ладони</dd>
+  </dl>
+</div>
+
+<h5>Локализация на кисти</h5>
+
+<p>Точки в сочетании с символами конфигураций в фигурных скобках обозначают места на кисти неведущей руки.</p>
+
+<div class="medium boxshadow-p">
+  <dl class="inline inline2" style="margin-bottom:1em">
+    <dt class="rsl">9Ёв0</dt>   <dd>кончики пальцев</dd>
+    <dt class="rsl">9вЁ0</dt>   <dd>кончик большого пальца</dd>
+    <dt class="rsl">9ЁЁв0</dt>  <dd>сбоку/сзади от пальцев</dd>
+    <dt class="rsl">9вЁЁ0</dt>  <dd>между большим и остальными</dd>
+    <dt class="rsl">9.в0</dt>   <dd>тыльная сторона ладони</dd>
+    <dt class="rsl">9в.0</dt>   <dd>центр ладони</dd>
+    <dt class="rsl">9..в0</dt>  <dd>боковая сторона кисти</dd>
+    <dt class="rsl">9в..0</dt>  <dd>задняя часть большого пальца</dd>
+  </dl>
+  <dl class="inline inline2">
+    <dt class="rsl">9Ё10</dt>   <dd>кончик указательного</dd>
+    <dt class="rsl">91ЁЁ0</dt>  <dd>сторона указательного</dd>
+    <dt class="rsl">9Ё20</dt>   <dd>кончик среднего</dd>
+    <dt class="rsl">92ЁЁ0</dt>  <dd>между первыми двумя</dd>
+    <dt class="rsl">9Ё30</dt>   <dd>кончик безымянного</dd>
+    <dt class="rsl">93ЁЁ0</dt>  <dd>между средними двумя</dd>
+    <dt class="rsl">9ЁУ0</dt>   <dd>кончик мизинца</dd>
+    <dt class="rsl">9иЁЁ0</dt>  <dd>между последними двумя</dd>
+  </dl>
+</div>
+
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Directions" class="feedback">Feedback?</a> -->
+<h4 id="Directions">Направление</h4>
+<!-- <br style="clear:both"> -->
+<div class="floatr medium">
+  <dl class="inline inline2 boxshadow-p">
+    <dt class="rsl">Ь</dt>   <dd>вверх</dd>
+    <dt class="rsl">/</dt>   <dd>вперёд</dd>
+    <dt class="rsl">Б</dt>   <dd>влево</dd>
+    <dt class="rsl">Ю</dt>   <dd>вправо</dd>
+    <dt class="rsl">З</dt>   <dd>назад</dd>
+    <dt class="rsl">_</dt>   <dd>вниз</dd>
+  </dl>
+</div>
+
+<p>При 26 возможных комбинациях направлений <strong>вверх, вниз, влево, вправо, вперёд</strong> и <strong>назад</strong> в шрифте есть всего 8 стрелок. Более сложные направления нужно будет обозначать комбинацией нескольких символов.</p>
+
+<blockquote style="clear:both">Жесты пишутся с точки зрения говорящего, а не с точки зрения собеседника (аналогично SignWriting и в si5s). Это значит, что стрелка вправо означает движение в правую сторону для того, кто показывает жест, и в левую сторону для того, кто стоит напротив.</blockquote>
+
+<h5 style="clear:both;float:left">Плоскости движения</h5>
+
+<div class="floatr medium dense" style="padding-top: 0.5em;">
+  <h6 style="margin-top:0">Плоскость лицевой стены</h6>
+  <dl class="inline inline2 boxshadow-p">
+    <dt class="rsl">Щ</dt>   <dd>влево-вверх</dd>
+    <dt class="rsl">/</dt>   <dd>вправо-вверх</dd>
+    <dt class="rsl">З</dt>   <dd>влево-вниз</dd>
+    <dt class="rsl">\</dt>   <dd>вправо-вниз</dd>
+  </dl>
+
+  <h6>Плоскость пола</h6>
+  <dl class="inline inline2 boxshadow-p">
+    <dt class="rsl">Щ</dt>   <dd>влево-вперёд</dd>
+    <dt class="rsl">/</dt>   <dd>вправо-вперёд</dd>
+    <dt class="rsl">З</dt>   <dd>влево-назад</dd>
+    <dt class="rsl">\</dt>   <dd>вправо-назад</dd>
+  </dl>
+
+  <h6>Плоскость боковой стены</h6>
+  <dl class="inline inline2 boxshadow-p">
+    <dt class="rsl">Щ</dt>   <dd>назад-вверх</dd>
+    <dt class="rsl">/</dt>   <dd>вперёд-вверх</dd>
+    <dt class="rsl">З</dt>   <dd>назад-вниз</dd>
+    <dt class="rsl">\</dt>   <dd>вперёд-вниз</dd>
+  </dl>
+</div>
+
+<p>Диагональные движения очень неоднозначны, поэтому старайтесь избегать точности в этом аспекте при письме. Вместо этого можно точнее указать другие компоненты жеста, и тогда направление движение будет понятно из контекста.</p>
+
+<p>Пробуйте по возможности упрощать движения, записывая их только через шесть базовых направлений и не используя диагональные.</p>
+
+<br style="clear:both">
+<div class="floatr medium">
+  <h6>Символы плоскостей</h6>
+  <dl class="inline inline1 boxshadow-p">
+    <dt class="rsl">(")</dt>   <dd>плоскость лицевой стены</dd>
+    <dt class="rsl">(~)</dt>   <dd>плоскость пола</dd>
+    <dt class="rsl">(%)</dt>   <dd>плоскость боковой стены</dd>
+  </dl>
+</div>
+
+<p>При крайней необходимости стрелки диагональных направлений можно использовать. В таких случаях плоскость движения следует уточнить при помощи символа плоскости (символа пальцев в круглых скобках).</p>
+
+<br style="clear:both">
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Relative+Locations" class="feedback">Feedback?</a> -->
+<h4 id="RelativeLocations">Относительная локализация</h4>
+
+<!-- <br style="clear:both"> -->
+<div class="floatr medium">
+  <dl class="boxshadow-p inline inline1b">
+    <dt class="rsl">9вЬ0</dt>   <dd>над неведущей рукой</dd>
+    <dt class="rsl">9в_0</dt>   <dd>под неведущей рукой</dd>
+    <dt class="rsl">9вБ0</dt>   <dd>слева от неведущей руки</dd>
+    <dt class="rsl">9вЮ0</dt>   <dd>справа от неведущей руки</dd>
+    <dt class="rsl">9в/0</dt>   <dd>перед неведущей рукой</dd>
+    <dt class="rsl">9вЗ0</dt>   <dd>за неведущей рукой</dd>
+  </dl>
+</div>
+
+<p>Стрелки в сочетании с символами конфигураций в фигурных скобках обозначают места в пространстве относительно неведущей руки.</p>
+
+<br style="clear:both">
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Reference+Point+Locations" class="feedback">Feedback?</a> -->
+<h4 id="ReferencePoints">Локус</h4>
+<!-- <br style="clear:both"> -->
+
+<p>Стрелки между вертикальными чертами могут обозначать произвольное положение в пространстве. Часто это важно для обозначения локуса &mdash; точки, которую приписывают какому-либо объекту и к которой потом отсылают, чтобы говорить об этом объекте (подобно местоимениям в звучащих языках)</p>
+
+<h5>Плоскость лицевой стены</h5>
+<div class="medium">
+  <dl class="boxshadow-p inline inline3b">
+    <dt class="rsl">ЙЩ"Й</dt> <dd>слева-сверху</dd>
+    <dt class="rsl">ЙЬЙ</dt>  <dd>сверху</dd>
+    <dt class="rsl">Й"/Й</dt> <dd>справа-сверху</dd>
+    <dt class="rsl">ЙБЙ</dt>  <dd>слева</dd>
+    <dt class="rsl"></dt>     <dd></dd>
+    <dt class="rsl">ЙЮЙ</dt>  <dd>справа</dd>
+    <dt class="rsl">ЙЗ"Й</dt> <dd>слева-снизу</dd>
+    <dt class="rsl">Й_Й</dt>  <dd>снизу</dd>
+    <dt class="rsl">Й"\Й</dt> <dd>справа-снизу</dd>
+  </dl>
+</div>
+<h5>Плоскость пола</h5>
+<div class="medium">
+  <dl class="boxshadow-p inline inline3b">
+    <dt class="rsl">ЙЩЖЙ</dt> <dd>слева-спереди</dd>
+    <dt class="rsl">Й/Й</dt>  <dd>спереди</dd>
+    <dt class="rsl">ЙЖ/Й</dt> <dd>справа-спереди</dd>
+    <dt class="rsl">ЙБЙ</dt>  <dd>слева</dd>
+    <dt class="rsl"></dt>     <dd></dd>
+    <dt class="rsl">ЙЮЙ</dt>  <dd>справа</dd>
+    <dt class="rsl">ЙЗЖЙ</dt> <dd>слева-сзади</dd>
+    <dt class="rsl">ЙЗЙ</dt>  <dd>сзади</dd>
+    <dt class="rsl">ЙЖ\Й</dt> <dd>справа-сзади</dd>
+  </dl>
+</div>
+<h5>Плоскость боковой стены</h5>
+<div class="medium">
+  <dl class="boxshadow-p inline inline3b">
+    <dt class="rsl">ЙЩ%Й</dt> <dd>сзади-сверху</dd>
+    <dt class="rsl">ЙЬЙ</dt>  <dd>сверху</dd>
+    <dt class="rsl">Й%/Й</dt> <dd>спереди-сверху</dd>
+    <dt class="rsl">ЙЗЙ</dt>  <dd>сзади</dd>
+    <dt class="rsl"></dt>     <dd></dd>
+    <dt class="rsl">Й/Й</dt>  <dd>спереди</dd>
+    <dt class="rsl">ЙЗ%Й</dt> <dd>сзади-снизу</dd>
+    <dt class="rsl">Й_Й</dt>  <dd>снизу</dd>
+    <dt class="rsl">Й%\Й</dt> <dd>спереди-снизу</dd>
+  </dl>
+</div>
+
+<br style="clear:both">
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Contact" class="feedback">Feedback?</a> -->
+<h4 id="Contact">Тип контакта</h4>
+
+<!-- <br style="clear:both"> -->
+<div class="floatr">
+  {% include ref/contact.html columns=1 examples=true %}
+</div>
+
+<p>Когда в рамках жеста рука соприкасается с другой частью тела, символы контакта позволяют уточнить, каким именно образом производится контакт.</p>
+
+<br style="clear:both">
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Circular+Motion" class="feedback">Feedback?</a> -->
+<h4 id="CircularMotion">Круговое движение</h4>
+<!-- <br style="clear:both"> -->
+
+<div class="floatr medium">
+  <dl class="boxshadow-p inline inline1">
+    <dt class="rsl">ЬД ЮД _Д БД</dt>    <dd>плоскость лицевой стены</dd>
+    <dt class="rsl">/Д ЮД ЗД БД</dt>    <dd>плоскость пола</dd>
+    <dt class="rsl">/Д _Д ЗД ЬД</dt>    <dd>плоскость боковой стены</dd>
+  </dl>
+</div>
+
+<p>Круговое движение обозначается символом спирали <strong>@</strong>, в шрифте соответствующим заглавной букве <strong>Д</strong>. Стрелка перед символом кругого движения обозначает направление, с которого начинается круговое движение.</p>
+
+<div class="floatr dense">
+  <h6>По часовой стрелке</h6>
+  <dl class="medium boxshadow-p inline inline1b">
+    <dt class="rsl">(@_)</dt>    <dd>плоскость лицевой стены <em>(1 час)</em></dd>
+    <dt class="rsl">(@Ю)</dt>    <dd>плоскость пола <em>(город)</em></dd>
+    <dt class="rsl">(@/)</dt>    <dd>плоскость боковой стены <em>(велосипед)</em></dd>
+  </dl>
+  <h6>Против часовой стрелки</h6>
+  <dl class="medium boxshadow-p inline inline1b">
+    <dt class="rsl">(@Ь)</dt>    <dd>плоскость лицевой стены <em>(год)</em></dd>
+    <dt class="rsl">(@Б)</dt>    <dd>плоскость пола <em>(обычный)</em></dd>
+    <dt class="rsl">(@З)</dt>    <dd>плоскость боковой стены <em>(обратно)</em></dd>
+  </dl>
+</div>
+
+
+<h5>Уточнение плоскости и направления</h5>
+
+<p>Если достаточно подробно представить прочие компоненты жеста, круговое движение скорее всего будет понятно несмотря на неоднозначность стрелок.</p>
+<p>При крайней необходимости плоскость и направление кругового движения можно уточнить, заключив спираль со стрелкой в круглые скобки.</p>
+
+<br style="clear:both">
+
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Moving+the+NonDominant+Hand" class="feedback">Feedback?</a> -->
+<h4 id="NonDominantHand">Движение неведущей руки</h4>
+
+<!-- <br style="clear:both"> -->
+<div class="floatr">
+  {% include ref/non-dominant.html columns=1 %}
+</div>
+
+<p>Если не указано обратного, считается, что двигается только ведущая рука. При помощи специальных символов можно указать, как движется неведущая рука относительно ведущей.</p>
+
+<br style="clear:both">
+<h4 id="OtherModifiers">Прочие модификации</h4>
+
+{% include ref/modifiers.html %}
+
+<br style="clear:both">
+
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=NonManual+Elements" class="feedback">Feedback?</a> -->
+<h4 id="NonManual">Немануальные компоненты</h4>
+<!-- <br style="clear:both"> -->
+<div class="floatr medium" style="width:45%">
+  <dl class="boxshadow-p inline inline1">
+    <dt class="rsl">:%Й</dt>        <dd>Нейтральное</dd>
+    <dt class="rsl">0:9%Й</dt>      <dd>Неприязнь</dd>
+    <dt class="rsl">(9:0%()</dt>    <dd>Удивление</dd>
+    <dt class="rsl">Ъ:Х%ЪХ</dt>     <dd>Подозрение</dd>
+    <dt class="rsl">Ъ:%9ЪХ0</dt>    <dd>Непринуждённость</dd>
+  </dl>
+</div>
+
+<p>Выражение лица можно выразить при помощи эмотиконов. Форма и границы символов пунктуации специально настроены для того чтобы хорошо сочетаться в части лица.</p>
+<p>Во всех выражениях нос изображается символом <strong>%</strong>, введённым в <a href="#Orientation">разделе об ориентации</a>. Все выражения можно записать симметрично, вверх ногами.</p>
+
+<h5 style="clear:both">Брови</h5>
+<div class="medium">
+  <dl class="boxshadow-p inline inline3">
+    <dt class="rsl">(:%Й</dt>   <dd style="width:20%;">Поднять брови</dd>
+    <dt class="rsl">9:%Й</dt>   <dd style="width:30%;">Поднять брови <small>(грустно)</small>  </dd>
+    <dt class="rsl">0:%Й</dt>   <dd style="width:20%;">Опустить брови</dd>
+  </dl>
+</div>
+
+<h5>Веки и нос</h5>
+<div class="medium">
+  <dl class="boxshadow-p inline inline2">
+    <dt class="rsl">Ъ:Х%Й</dt>  <dd>Прищуриться</dd>
+    <dt class="rsl">9:0%Й</dt>  <dd>Широко раскрыть глаза</dd>
+    <dt class="rsl">:Х%Й</dt>   <dd>Напрячь нижние веки</dd>
+    <dt class="rsl">Ъ:%Й</dt>   <dd>Опустить веки <small>(расслабленно)</small></dd>
+    <dt class="rsl">0%Й</dt>    <dd>Закрыть глаза</dd>
+    <dt class="rsl">09%Й</dt>   <dd>Сжать веки</dd>
+    <dt class="rsl">!%Й</dt>    <dd>Подмигнуть</dd>
+    <dt class="rsl">:9%Й</dt>   <dd>Сморщить нос</dd>
+  </dl>
+</div>
+
+<h5>Рот</h5>
+<div class="medium">
+  <dl class="boxshadow-p inline inline3b">
+    <dt class="rsl">:%)</dt>    <dd>Улыбнуться</dd>
+    <dt class="rsl">:%(</dt>    <dd>Схмуриться</dd>
+    <dt class="rsl">:%ЪХ</dt>   <dd>Сжать губы</dd>
+    <dt class="rsl">:%Х0</dt> <dd>Выпячить губу</dd>
+    <dt class="rsl">:%9ЪХ0</dt> <dd>Выпячить губы</dd>
+    <dt class="rsl">:%09</dt>   <dd>Дрожать губами</dd>
+    <dt class="rsl">:%(*)</dt>  <dd>Надуть щёки</dd>
+    <dt class="rsl">:%*</dt>    <dd>Губы трубочкой</dd>
+    <dt class="rsl">:%ХЪ</dt>   <dd>Показать зубы</dd>
+    <dt class="rsl">:%()</dt>   <dd>Открыть рот</dd>
+    <dt class="rsl">:%Х)</dt>   <dd>Открытая улыбка</dd>
+    <dt class="rsl">:%(ЪЭ</dt>  <dd>Показать язык</dd>
+    <dt class="rsl">:%ЪЭХ</dt>   <dd>Л</dd>
+    <dt class="rsl">:%Ъ(</dt>   <dd>Ф</dd>
+    <dt class="rsl">:%9ХЪ0</dt>   <dd>Ш</dd>
+  </dl>
+  <dl class="boxshadow-p inline inline2c">
+    <dt class="rsl">:%ЪХ :%ХЪ</dt>      <dd>МИ</dd>
+    <dt class="rsl">:%ЪХ :%() :%Ъ(</dt> <dd>ПАФ</dd>
+    <dt class="rsl">:%ХЪ :%()</dt>      <dd>СТА</dd>
+    <dt class="rsl">:%9ХЪ0 :%*</dt>     <dd>ЧУ</dd>
+    <dt class="rsl">:%ЪЭХ :%(ЪЭ</dt>    <dd>НА</dd>
+    <dt class="rsl">:%Ъ( :%()</dt>      <dd>ВА</dd>
+  </dl>
+</div>
+
+<h5>Опробуйте!</h5>
+<blockquote>Здесь вы можете попрактиковаться в записи выражений лица:
+<input class="tryit" value=":%)">
+</blockquote>
+
+<h5 style="clear:both">Движение глаз</h5>
+<div class="medium">
+  <dl class="boxshadow-p inline inline2">
+    <dt class="rsl">БЖБ</dt>  <dd>Посмотреть влево</dd>
+    <dt class="rsl">ЮЖЮ</dt>  <dd>Посмотреть вправо</dd>
+    <dt class="rsl">ЬЖЬ</dt>  <dd>Посмотреть вверх</dd>
+    <dt class="rsl">_Ж_</dt>  <dd>Посмотреть вниз</dd>
+  </dl>
+</div>
+
+<h5 style="clear:both">Движение головы</h5>
+<div class="medium">
+  <dl class="boxshadow-p inline inline2">
+    <dt class="rsl">(Б)</dt>    <dd>Повернуться влево</dd>
+    <dt class="rsl">(Ю)</dt>    <dd>Повернуться вправо</dd>
+    <dt class="rsl">(Ь)</dt>    <dd>Поднять голову</dd>
+    <dt class="rsl">(_)</dt>    <dd>Опустить голову</dd>
+    <dt class="rsl">(/)</dt>    <dd>Выпячить голову вперёд</dd>
+    <dt class="rsl">(З)</dt>    <dd>Податься головой назад</dd>
+    <dt class="rsl">(БЮ)</dt>   <dd>Помотать головой</dd>
+    <dt class="rsl">(__)</dt>   <dd>Покивать</dd>
+  </dl>
+</div>
+
+<h5 style="clear:both">Движение плеч</h5>
+<div class="medium">
+  <dl class="boxshadow-p inline inline3">
+    <dt class="rsl">9Б0</dt>    <dd>Отклониться влево</dd>
+    <dt class="rsl">9Ю0</dt>    <dd>Отклониться вправо</dd>
+    <dt class="rsl">9Ь0</dt>    <dd>Пожать плечами</dd>
+  </dl>
+</div>
+
+
+<hr>
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Putting+It+All+Together" class="feedback">Feedback?</a> -->
+<h3 id="CombiningSymbols">Совмещение символов</h3>
+<h4 id="PuttingItAllTogether">Записываем все компоненты</h4>
+
+<p style="clear:both">Итак, используя символы этого шрифта, мы можем записать любой из следующих компонентов РЖЯ:</p>
+
+<div class="medium">
+  <dl class="boxshadow-p inline inline2">
+    <dt class="rsl">1</dt>      <dd>конфигурацию</dd>
+    <dt class="rsl">."</dt>     <dd>ориентацию</dd>
+    <dt class="rsl">(Й..)</dt>  <dd>положение на теле</dd>
+    <dt class="rsl">9Ё10</dt>   <dd>положение на руке</dd>
+    <dt class="rsl">91Ь0</dt>   <dd>относительное положение</dd>
+    <dt class="rsl">ЙЖ/Й</dt>   <dd>локус</dd>
+    <dt class="rsl">Ц</dt>      <dd>тип контакта</dd>
+    <dt class="rsl">ЮД</dt>     <dd>направление движения</dd>
+    <dt class="rsl">ЯЯ</dt>     <dd>движение неведущей руки</dd>
+    <dt class="rsl">(:%*</dt>   <dd>выражение лица</dd>
+    <dt class="rsl">(_)</dt>    <dd>движение головы</dd>
+    <dt class="rsl">{Б}</dt>    <dd>движение плеч</dd>
+  </dl>
+</div>
+
+<p>Чтобы записать жест, надо решить, в каком порядке записывать его компоненты. Понятно, как делать это в звучащем языке &mdash; звуки записываются в том порядке, в котором они произносятся. В двухмерной письменности компоненты можно было бы размещать в соответствии с пространством. Но в линейных системах записи жестовых языков приходится выбирать произвольный порядок и придерживаться его (например, <em>конфигурация, локализация, движение</em>).</p>
+
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Frames" class="feedback">Feedback?</a> -->
+<h4 id="Frames">Кадры</h4>
+
+<p>Одна из задач нашей системы &mdash; пользоваться не только преимуществами линейности, но и преимуществами графичности. Для этого мы будем распологать компоненты &laquo;кадрами&raquo;, чтобы запись визуально напоминала взаимное расположение частей жеста. Вот парочка примеров:</p>
+
+<div class="floatr medium" style="width:40%">
+  <dl class="boxshadow-p inline inline1">
+    <dt>{% include sign.html id=7435 word="Жест" %}</dt>     <dd class="rsl">5%ЁЁ%5</dd>
+    <dt>{% include sign.html id=18   word="Дверь" %}</dt>    <dd class="rsl">вЁ==Ёв</dd>
+    <dt>{% include sign.html id=3981 word="Такой же" %}</dt> <dd class="rsl">1Ж.*.Ж1</dd>
+  </dl>
+</div>
+
+<p>Символы конфигурации и ориентации вместе образуют схематичное изображение того, как руки расположены по отношению друг к другу.</p>
+<p>В случае жеста {% include sign.html id=3981 word="Такой же" %} между руками записывается символ контакта, чтобы показать, что они соприкасаются.</p>
+
+<br style="clear:both">
+<div class="floatr medium" style="width:45%">
+  <dl class="boxshadow-p inline inline1">
+    <dt>{% include sign.html id=14598 word="Вспомнить" %}</dt>  <dd class="rsl">(ЁЁ)*.Эо</dd>
+    <dt>{% include sign.html id=22555 word="Мой" %}</dt>        <dd class="rsl">9Й0*=Ёв</dd>
+    <dt>{% include sign.html id=6892  word="Медленно" %}</dt>   <dd class="rsl">9...0;-.в</dd>
+  </dl>
+</div>
+
+<p>В кадрах может отображаться соотношение между рукой и местом на голове или на теле.</p>
+
+<p>В этих примерах символ контакта соединяет руку с обозначением виска, груди или предплечья.</p>
+
+<br style="clear:both">
+<div class="floatr medium" style="width:45%">
+  <dl class="boxshadow-p inline inline1">
+    <dt>{% include sign.html id=8848 word="Помочь" %}</dt>   <dd class="rsl">9вЁЁ0ЭЁ*-Ёв</dd>
+    <dt>{% include sign.html id=4023 word="Флаг" %}</dt>     <dd class="rsl">9Ё10Э.*=Ёв</dd>
+    <dt>{% include sign.html id=444  word="Автобус" %}</dt>  <dd class="rsl">9ЕЗ0."."Е</dd>
+  </dl>
+</div>
+
+<p>Когда положение определяется на неведущей руке или относительно неё, конфигурация неведущей руки становится частью локализации, и второй раз записывать форму руки не надо.</p>
+
+<br style="clear:both">
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Timelines" class="feedback">Feedback?</a> -->
+<h4 id="Timelines">Таймлайны</h4>
+<p>Кадры располагают символы примерно так, как они бы располагались на изображении жеста. На таймлайне же символы располагаются в том порядке, в котором они идут во времени.</p>
+
+<div class="floatr medium" style="width:70%">
+  <dl class="boxshadow-p inline inline1b">
+    <dt>{% include sign.html id=7435 word="Жест" %}</dt>      <dd class="rsl">5%ЁЁ%5 / Д Я</dd>
+    <dt>{% include sign.html id=3981 word="Такой же" %}</dt>  <dd class="rsl">1Ж.*.Ж1 Б Б 09</dd>
+    <dt>{% include sign.html id=6892 word="Медленно" %}</dt>  <dd class="rsl">9...0;-.в З</dd>
+    <dt>{% include sign.html id=7711 word="Праздник" %}</dt>  <dd class="rsl">рЁ=*9Й0*=Ёр / 5Ё==Ё5 09</dd>
+    <dt>{% include sign.html id=233  word="Лифт" %}</dt>      <dd class="rsl">ЛЭ.*.ЭЛ Ь _ )</dd>
+  </dl>
+</div>
+
+<p>Кадры и таймлайны вместе полностью описывают все компоненты жеста.</p>
+
+<p><strong>$</strong>, <strong>}{</strong> и <strong>)</strong> в конце таймлайна отражают поведение неведущей руки в жестах, в которых она двигается.</p>
+  
+<br style="clear:both">
+<div class="boxshadow-p headline">
+  <p class="description" style="text-align:center">{% include sign.html id=233  word="Лифт" %}: <strong class="blue">кадр</strong> + <strong class="red">таймлайн</strong></p>
+  <p class="rsl"><span class="blue">ЛЭ.*.ЭЛ</span> <span class="red">Ь _</span> )</p>
+</div>
+
+<!-- <br style="clear:both"> -->
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Removing+Uncessesary+Symbols" class="feedback">Feedback?</a> -->
+<h4 id="Simplifying">Сокращение</h4>
+
+<h5>Убираем ненужные символы</h5>
+
+<p style="clear:both">Основной способ сократить запись жеста &mdash; не дублировать информацию о том компоненте, который не меняется с первого кадра.</p>
+
+<div class="floatr medium" style="width:55%">
+  <dl class="boxshadow-p inline inline1">
+    <dt style="width:45%">{% include sign.html id=7711 word="Праздник" %} <small>(короче)</small></dt> <dd class="rsl">рЁ=*9Й0*=Ёр/509</dd>
+  </dl>
+</div>
+
+<p>В жесте {% include sign.html id=7711 word="Праздник" %} ориентация не изменяется, поэтому достаточно записать только новую конфигурацию.</p>
+
+<div class="floatr medium" style="width:55%">
+  <dl class="boxshadow-p inline">
+    <dt style="width:57%">{% include sign.html id=7711 word="Праздник" %} <small>(ещё короче)</small></dt> <dd class="rsl">9Й0*=Ёр/509</dd>
+  </dl>
+</div>
+
+<p>Если хочется сократить запись ещё сильнее, можно совсем избавиться от информации о левой руке.</p>
+
+<div class="floatr medium" style="width:50%">
+  <dl class="boxshadow-p inline">
+    <dt style="width:70%">{% include sign.html id=7711 word="Праздник" %} <small>(неоднозначно)</small></dt> <dd class="rsl">р/509</dd>
+  </dl>
+</div>
+
+<p>Можно сделать ещё короче. В такой записи жест {% include sign.html id=7711 word="Праздник" %} технически не отличим от жеста {% include sign.html id=2028 word="Рассказ" %}, однако если читатель хорошо знает РЖЯ и контекста достаточно, чтобы отличить одно от другого, то можно сокращать и так.</p>
+
+<br style="clear:both">
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Simplifying+Repetition" class="feedback">Feedback?</a> -->
+<h5>Сокращаем повторение</h5>
+<!-- <br style="clear:both"> -->
+
+<div class="boxshadow-p floatr medium" style="width:50%;">
+  <dl class="inline inline1">
+    <dt>{% include sign.html id=18   word="Дверь" %}</dt>     <dd class="rsl">вЁ==Ёв//Ё%</dd>
+    <dt>{% include sign.html id=2028 word="Рассказ" %}</dt>   <dd class="rsl">р".."р//509</dd>
+  </dl>
+</div>
+<p>Когда какое-то действие повторяется, достаточно повторить символ движения и указать изменения в кадре в конце.</p>
+
+<br style="clear:both">
+<div class="boxshadow-p floatr medium" style="width:50%;">
+  <dl class="inline inline1">
+    <dt>{% include sign.html id=3981 word="Такой же" %}</dt>  <dd class="rsl">1Ж.*.Ж1ББ09</dd>
+    <dt>{% include sign.html id=3981 word="Такой же" %} <small>(короче)</small></dt>  <dd class="rsl">1Ж.**.Ж1</dd>
+  </dl>
+</div>
+<p>При повторяющемся контакте иногда можно избавиться от символов движения.</p>
+
+<h5 style="clear:both">Повторение в немануальных компонентах</h5>
+<p>Используйте несколько носов, чтобы указать изменение формы рта. При повторяющемся движении продублируйте символ носа.</p>
+
+<div class="medium">
+  <dl class="boxshadow-p inline inline3c">
+    <dt class="rsl">:%ЪХ%ХЪ</dt>      <dd>МИ</dd>
+    <dt class="rsl">:%ЪХ%()%Ъ(</dt>   <dd>ПАФ</dd>
+    <dt class="rsl">:%ХЪ%()</dt>      <dd>СТА</dd>
+
+    <dt class="rsl">:%9ХЪ0%%%*</dt>   <dd>ЧУ-ЧУ-ЧУ</dd>
+    <dt class="rsl">:%ЪЭХ%%%(ЪЭ</dt>  <dd>НА-НА-НА</dd>
+    <dt class="rsl">:%Ъ(%%%()</dt>    <dd>ВА-ВА-ВА</dd>
+  </dl>
+</div>
+
+<!-- <br style="clear:both"> -->
+<!-- <a href="https://github.com/aslfont/aslfont.github.com/issues/new?labels=feedback&title=Guidelines" class="feedback">Feedback?</a> -->
+<h5>Дополнительные советы</h5>
+<p>По возможности записывайте каждый жест как один кадр + один таймлайн.</p>
+<p>В симметричных жестах полные кадры длиннее, но их может быть проще воспринимать.</p>
+<p>Сначала указывайте немануальные движения, а потом жест, к которому они относятся.</p>
+<p>Экспериментируйте. Пробуйте разные способы записи и смотрите, какой вариант удобнее.</p>
+<p>Пользуйтесь с удовольствием!</p>
+
+{{jump_to}}
+<br style="clear:both">

@@ -411,6 +411,10 @@ Full-Width Styles
   background-color:#fff;
 }
 
+.dense .boxshadow, .dense .boxshadow-p {
+  margin-bottom: 0em;
+}
+
 .boxshadow-p {
   padding: .5em 1em;
 }
@@ -673,11 +677,11 @@ ul.column {
 .medium {
   font-size: 150%;
 }
-.medium dd {
+.medium dt, .medium dd {
   font-size: 65%;
 }
-.medium dd.asl {
-  font-size: 166%;
+.medium dt.rsl, .medium dd.rsl {
+  font-size: 100%;
 }
 
 .dd-small dd {
