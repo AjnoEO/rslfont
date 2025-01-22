@@ -622,6 +622,9 @@ ul.column {
 .rsl {
   font-family: RSL-Font;
 }
+span.rsl {
+  vertical-align: -10%;
+}
 
 .asl {
   font-size:   166%;
