@@ -126,6 +126,10 @@
       <section class="main_content inner">
         {% include base_nav.html boxlinks=page.toplinks %}
 
+        {% if page.section %}
+        {% include lessons_nav.html %}
+        {% endif %}
+
         {{content}}
         
         <hr>
