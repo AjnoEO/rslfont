@@ -1,0 +1,12 @@
+<p class="{% if include.rsl %}rsl{% endif %} keyboard medium {% if include.highlight %}gray{% endif %}" style="text-align:center;">
+    <span style="background-color:#fff;border-top:4px solid #fff;border-bottom:2px solid #fff;">
+        {% for row in site.data.keys %}
+        &nbsp;{% for pair in row -%}
+            {% if include.rsl and pair["letter-key"] %}<span class="letter-key">{% endif -%}
+                {% if include.highlight contains pair["lower"] %}<strong class="red">{{pair["lower"]}}</strong>{% else %}{{pair["lower"]}}{% endif -%}
+                <sup>{% if include.highlight contains pair["upper"] %}<strong class="red">{{pair["upper"]}}</strong>{% else %}{{pair["upper"]}}{% endif %}</sup>
+            {%- if include.rsl and pair['letter-key'] %}</span>{% endif %}
+        {%- endfor %}<br>
+        {% endfor %}
+    </span>
+</p>

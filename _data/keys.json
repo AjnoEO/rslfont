@@ -1,0 +1,245 @@
+[
+    [
+        {
+            "lower": "ё",
+            "upper": "Ё",
+            "letter-key": false
+        },
+        {
+            "lower": "1",
+            "upper": "!",
+            "letter-key": false
+        },
+        {
+            "lower": "2",
+            "upper": "\"",
+            "letter-key": false
+        },
+        {
+            "lower": "3",
+            "upper": "&numero;",
+            "letter-key": false
+        },
+        {
+            "lower": "4",
+            "upper": ";",
+            "letter-key": false
+        },
+        {
+            "lower": "5",
+            "upper": "%",
+            "letter-key": false
+        },
+        {
+            "lower": "6",
+            "upper": ":",
+            "letter-key": false
+        },
+        {
+            "lower": "7",
+            "upper": "?",
+            "letter-key": false
+        },
+        {
+            "lower": "8",
+            "upper": "*",
+            "letter-key": false
+        },
+        {
+            "lower": "9",
+            "upper": "(",
+            "letter-key": false
+        },
+        {
+            "lower": "0",
+            "upper": ")",
+            "letter-key": false
+        },
+        {
+            "lower": "-",
+            "upper": "_",
+            "letter-key": false
+        },
+        {
+            "lower": "=",
+            "upper": "+",
+            "letter-key": false
+        }
+    ],
+    [
+        {
+            "lower": "й",
+            "upper": "Й",
+            "letter-key": false
+        },
+        {
+            "lower": "ц",
+            "upper": "Ц",
+            "letter-key": false
+        },
+        {
+            "lower": "у",
+            "upper": "У",
+            "letter-key": true
+        },
+        {
+            "lower": "к",
+            "upper": "К",
+            "letter-key": true
+        },
+        {
+            "lower": "е",
+            "upper": "Е",
+            "letter-key": true
+        },
+        {
+            "lower": "н",
+            "upper": "Н",
+            "letter-key": true
+        },
+        {
+            "lower": "г",
+            "upper": "Г",
+            "letter-key": false
+        },
+        {
+            "lower": "ш",
+            "upper": "Ш",
+            "letter-key": true
+        },
+        {
+            "lower": "щ",
+            "upper": "Щ",
+            "letter-key": false
+        },
+        {
+            "lower": "з",
+            "upper": "З",
+            "letter-key": false
+        },
+        {
+            "lower": "х",
+            "upper": "Х",
+            "letter-key": false
+        },
+        {
+            "lower": "ъ",
+            "upper": "Ъ",
+            "letter-key": false
+        },
+        {
+            "lower": "\\",
+            "upper": "/",
+            "letter-key": false
+        }
+    ],
+    [
+        {
+            "lower": "ф",
+            "upper": "Ф",
+            "letter-key": true
+        },
+        {
+            "lower": "ы",
+            "upper": "Ы",
+            "letter-key": true
+        },
+        {
+            "lower": "в",
+            "upper": "В",
+            "letter-key": true
+        },
+        {
+            "lower": "а",
+            "upper": "А",
+            "letter-key": true
+        },
+        {
+            "lower": "п",
+            "upper": "П",
+            "letter-key": true
+        },
+        {
+            "lower": "р",
+            "upper": "Р",
+            "letter-key": true
+        },
+        {
+            "lower": "о",
+            "upper": "О",
+            "letter-key": true
+        },
+        {
+            "lower": "л",
+            "upper": "Л",
+            "letter-key": false
+        },
+        {
+            "lower": "д",
+            "upper": "Д",
+            "letter-key": false
+        },
+        {
+            "lower": "ж",
+            "upper": "Ж",
+            "letter-key": false
+        },
+        {
+            "lower": "э",
+            "upper": "Э",
+            "letter-key": false
+        }
+    ],
+    [
+        {
+            "lower": "я",
+            "upper": "Я",
+            "letter-key": false
+        },
+        {
+            "lower": "ч",
+            "upper": "Ч",
+            "letter-key": true
+        },
+        {
+            "lower": "с",
+            "upper": "С",
+            "letter-key": true
+        },
+        {
+            "lower": "м",
+            "upper": "М",
+            "letter-key": true
+        },
+        {
+            "lower": "и",
+            "upper": "И",
+            "letter-key": true
+        },
+        {
+            "lower": "т",
+            "upper": "Т",
+            "letter-key": true
+        },
+        {
+            "lower": "ь",
+            "upper": "Ь",
+            "letter-key": false
+        },
+        {
+            "lower": "б",
+            "upper": "Б",
+            "letter-key": false
+        },
+        {
+            "lower": "ю",
+            "upper": "Ю",
+            "letter-key": false
+        },
+        {
+            "lower": ".",
+            "upper": ",",
+            "letter-key": false
+        }
+    ]
+]
