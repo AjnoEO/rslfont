@@ -1,45 +1,20 @@
 
 <ul class="inline">
-  <li><a class="{% if page.section == '1-12'  %}selected{% endif %}" href="lesson1.html">Уроки 1&ndash;12</a>  </li>
-  <li><a class="{% if page.section == '13-24'  %}selected{% endif %}" href="lesson13.html">Уроки 13&ndash;24</a>  </li>
+  <li><a class="{% if page.lesson_num <= 12 %}selected{% endif %}" href="lesson1.html">Уроки 1&ndash;12</a>  </li>
+  <li><a class="{% if page.lesson_num >= 13 %}selected{% endif %}" href="lesson13.html">Уроки 13&ndash;24</a>  </li>
 </ul>
 <hr>
-{% if page.section == '1-12'%}
+{% assign first = page.lesson_num | divided_by: 12 | times: 12 %}
+{% for col in (0..1) %}
 <ul class="column">
-  <li><a class="{% if page.selected == 'lesson1'  %}selected{% endif %}" href="lesson1.html">Урок 1: Конфигурации</a>  </li>
-  <li><a class="{% if page.selected == 'lesson2'  %}selected{% endif %}" href="lesson2.html">Урок 2: Локализация на голове 1</a>  </li>
-  <li><a class="{% if page.selected == 'lesson3'  %}selected{% endif %}" href="lesson3.html">Урок 3: Локализация на теле 1</a>  </li>
-  <li><a class="{% if page.selected == 'lesson4'  %}selected{% endif %}" href="lesson4.html">Урок 4: Типы контакта 1</a>  </li>
-  <li><a class="{% if page.selected == 'lesson5'  %}selected{% endif %}" href="lesson5.html">Урок 5: Направление</a>  </li>
-  <li><a class="{% if page.selected == 'lesson6'  %}selected{% endif %}" href="lesson6.html">Урок 6: Локализация в пространстве 1</a>  </li>
+  {% assign start = col | times: 6 | plus: first | plus: 1 %}
+  {% assign end = col | times: 6 | plus: first | plus: 6 %}
+  {% for num in (start..end) %}
+  <li>
+    <a class="{% if page.lesson_num == num %}selected{% endif %}" href="lesson{{num}}.html">Урок {{num}}: {{site.data.lessons[num]["ru"]}}</a>
+  </li>
+  {% endfor %}
 </ul>
-<ul class="column">
-  <li><a class="{% if page.selected == 'lesson7'  %}selected{% endif %}" href="lesson7.html">Урок 7: Ориентация ладони 1</a>  </li>
-  <li><a class="{% if page.selected == 'lesson8'  %}selected{% endif %}" href="lesson8.html">Урок 8: Локализация на голове 2</a>  </li>
-  <li><a class="{% if page.selected == 'lesson9'  %}selected{% endif %}" href="lesson9.html">Урок 9: Локализация на теле 2</a>  </li>
-  <li><a class="{% if page.selected == 'lesson10' %}selected{% endif %}" href="lesson10.html">Урок 10: Локализация на руке</a>  </li>
-  <li><a class="{% if page.selected == 'lesson11' %}selected{% endif %}" href="lesson11.html">Урок 11: Локализация на кисти 1</a>  </li>
-  <li><a class="{% if page.selected == 'lesson12' %}selected{% endif %}" href="lesson12.html">Урок 12: Типы контакта 2</a>  </li>
-</ul>
-{% endif %}
-
-{% if page.section == '13-24'%}
-<ul class="column">
-  <li><a class="{% if page.selected == 'lesson13' %}selected{% endif %}" href="lesson13.html">Урок 13: Круговое движение</a>  </li>
-  <li><a class="{% if page.selected == 'lesson14' %}selected{% endif %}" href="lesson14.html">Урок 14: Изменение конфигурации</a>  </li>
-  <li><a class="{% if page.selected == 'lesson15' %}selected{% endif %}" href="lesson15.html">Урок 15: Изменение ориентации</a>  </li>
-  <li><a class="{% if page.selected == 'lesson16' %}selected{% endif %}" href="lesson16.html">Урок 16: Движение пальцами</a>  </li>
-  <li><a class="{% if page.selected == 'lesson17' %}selected{% endif %}" href="lesson17.html">Урок 17: Движение второй руки</a>  </li>
-  <li><a class="{% if page.selected == 'lesson18' %}selected{% endif %}" href="lesson18.html">Урок 18: Движение головы и тела 1</a>  </li>
-</ul>
-  <ul class="column">
-  <li><a class="{% if page.selected == 'lesson19' %}selected{% endif %}" href="lesson19.html">Урок 19: Выражения лица 1</a>  </li>
-  <li><a class="{% if page.selected == 'lesson20' %}selected{% endif %}" href="lesson20.html">Урок 20: Ориентация ладони 2</a>  </li>
-  <li><a class="{% if page.selected == 'lesson21' %}selected{% endif %}" href="lesson21.html">Урок 21: Локализация в пространстве 2</a>  </li>
-  <li><a class="{% if page.selected == 'lesson22' %}selected{% endif %}" href="lesson22.html">Урок 22: Локализация на кисти 2</a>  </li>
-  <li><a class="{% if page.selected == 'lesson23' %}selected{% endif %}" href="lesson23.html">Урок 23: Движения головы и тела 2</a>  </li>
-  <li><a class="{% if page.selected == 'lesson24' %}selected{% endif %}" href="lesson24.html">Урок 24: Выражения лица 2</a>  </li>
-</ul>
-{% endif %}
+{% endfor %}
 
 <br style="clear:both">

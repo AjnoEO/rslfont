@@ -1,0 +1,24 @@
+---
+layout: default
+toplinks: true
+---
+{% assign page.title = site.data.lessons[page.lesson_num]["ru"] %}
+
+{% include lessons_nav.html %}
+
+<h3>
+    Урок {{page.lesson_num}}: 
+    {{site.data.lessons[page.lesson_num]["ru"]-}}
+    <span class="rsl"> {{site.data.lessons[page.lesson_num]["rsl"]}}</span>
+</h3>
+
+{{content}}
+
+{% if page.lesson_num < 24 %}
+{% assign next_num = page.lesson_num | plus: 1 %}
+<p style="text-align:right;clear:both">
+    <a href="lesson{{next_num}}.html"><big>
+        Урок {{next_num}}: <em>{{site.data.lessons[next_num]["ru"]}}</em> &rarr;
+    </big></a>
+</p>
+{% endif %}
