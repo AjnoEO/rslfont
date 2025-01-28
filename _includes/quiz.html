@@ -1,0 +1,7 @@
+<div class="boxshadow-p" style="font-family:monospace">
+    <dl class="inline inline2b">
+        {% for section in site.data.lexicon[page.lesson_num] %}{% for word in section %}
+        <dt>{% include sign.html id=word.id word=word.ru %}</dt><dd><input class="quiz" placeholder="{{word.rsl}}" data-answer="{{word.rsl}}"></dd>
+        {% endfor %}{% endfor %}
+    </dl>
+</div>
