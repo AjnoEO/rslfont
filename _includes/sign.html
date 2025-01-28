@@ -1,7 +1,9 @@
-{% if include.id -%}
-    <a href="https://spreadthesign.ru/{{include.id}}" target="_blank">&laquo;
+{% if include.no_quotes %}{% assign lq = "" %}{% assign rq = "" %}
+{%- else %}{% assign lq = "&laquo;" %}{% assign rq = "&raquo;" %}{% endif %}
+{%- if include.id -%}
+    <a href="https://spreadthesign.ru/{{include.id}}" target="_blank">{{lq}}
         {{-include.word-}}
-    &raquo;</a>
+    {{rq}}</a>
 {%- else -%}
-    &laquo;{{include.word}}&raquo;
+    {{lq}}{{include.word}}{{rq}}
 {%- endif %}

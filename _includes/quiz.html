@@ -2,7 +2,7 @@
 <div class="boxshadow-p" style="font-family:monospace">
     <dl class="inline inline2b">
         {% for section in site.data.lexicon[page.lesson_num] %}{% for word in section %}
-        <dt>{% include sign.html id=word.id word=word.ru %}</dt><dd><input class="quiz" {% if num == 1 %}placeholder="{{word.rsl}}"{% endif %} data-answer="{{word.rsl}}"></dd>
+        <dt>{% include sign.html id=word.id word=word.ru no_quotes=true %}</dt><dd><input class="quiz" {% if num == 1 %}placeholder="{{word.rsl}}"{% endif %} data-answer="{{word.rsl}}"></dd>
         {% if page.lesson_num > 1 %}{% assign num = num | plus: 1 %}{% endif %}
         {% endfor %}{% endfor %}
     </dl>
