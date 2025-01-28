@@ -1,0 +1,10 @@
+{%- assign symbols = include.symbols | split: "" -%}
+{%- assign cols = symbols | size -%}
+{%- if cols > 5 -%}{% assign cols = 5 %}{%- endif -%}
+<div class="medium boxshadow-p" style="font-family:monospace">
+    <dl class="inline inline{{cols}}">
+        {% for hs in symbols %}
+            <dt class="rsl">{{hs}}</dt><dd>{{hs}}</dd>
+        {% endfor %}
+    </dl>
+</div>
