@@ -1,0 +1,9 @@
+<div class="medium boxshadow-p" style="font-family:monospace">
+    {% for section in site.data.lexicon[page.lesson_num] %}
+    <dl class="inline inline2b">
+        {% for word in section %}
+        <dt class="rsl">{{word["rsl"]}}</dt><dd>{% include sign.html id=word.id word=word.ru %}</dd>
+        {% endfor %}
+    </dl>
+    {% endfor %}
+</div>

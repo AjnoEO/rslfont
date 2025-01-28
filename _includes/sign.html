@@ -1,1 +1,7 @@
-<a href="https://spreadthesign.ru/{{include.id}}" target="_blank">&laquo;{{include.word}}&raquo;</a>
+{% if include.id -%}
+    <a href="https://spreadthesign.ru/{{include.id}}" target="_blank">&laquo;
+        {{-include.word-}}
+    &raquo;</a>
+{%- else -%}
+    &laquo;{{include.word}}&raquo;
+{%- endif %}
