@@ -1,3 +1,5 @@
+{% assign type = site.data.lexicon[page.lesson_num] | inspect | split: "" | first %}
+{% if type == '[' %}
 <div class="medium boxshadow-p" style="font-family:monospace">
     {% for section in site.data.lexicon[page.lesson_num] %}
     <dl class="inline inline2b">
@@ -7,3 +9,15 @@
     </dl>
     {% endfor %}
 </div>
+{% else %}
+{% for section in site.data.lexicon[page.lesson_num] %}
+    <h6>{{section[0]}}</h6>
+    <div class="medium boxshadow-p" style="font-family:monospace">
+    <dl class="inline inline2b">
+        {% for word in section[1] %}
+        <dt class="rsl">{{word.rsl}}</dt><dd>{% include sign.html id=word.id word=word.ru %}</dd>
+        {% endfor %}
+    </dl>
+    </div>
+{% endfor %}
+{% endif %}
