@@ -130,7 +130,7 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section class="main_content inner">
-        {% if layout.toplinks %}{% assign toplinks=layout.toplinks %}{% else %}{% assign toplinks=page.toplinks %}{% endif %}
+        {% assign toplinks=layout.toplinks | default: page.toplinks %}
         {% include base_nav.html boxlinks=toplinks %}
 
         {{content}}
