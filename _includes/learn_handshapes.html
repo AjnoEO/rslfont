@@ -1,0 +1,11 @@
+{% assign symbols = site.data.handshapes[page.lesson_num] %}
+{% assign new = symbols.new %}
+{% assign review = symbols.review %}
+{% if new %}
+    <h5>Как печатать: новые конфигурации</h5>
+    {% include handshapes_block.html symbols=new %}
+{% endif %}
+{% if review %}
+    {% if new %}<h6>Как печатать: повторение</h6>{% else %}<h5>Как печатать: повторение</h5>{% endif %}
+    {% include handshapes_block.html symbols=review %}
+{% endif %}
