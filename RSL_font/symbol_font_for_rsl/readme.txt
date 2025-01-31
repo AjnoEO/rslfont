@@ -4,7 +4,7 @@ This font was created by “Ajno”*.
 This font has a homepage where this archive and other versions may be found:
 https://fontstruct.com/fontstructions/show/2567074
 
-*NOTE: “5%ЁЁ%жДЯ | шрифт ржя” was originally cloned (copied)
+*NOTE: “5Э.Ё=жДЯ | шрифт ржя” was originally cloned (copied)
 from the FontStruction “Symbol Font For ASL”
 (https://fontstruct.com/fontstructions/show/790283) by “aslfont”, which is
 licensed under a Creative Commons Attribution license
