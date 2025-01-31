@@ -4,8 +4,8 @@ This font was created by “Ajno”*.
 This font has a homepage where this archive and other versions may be found:
 https://fontstruct.com/fontstructions/show/2567074
 
-*NOTE: “Symbol Font For RSL | Шрифт РЖЯ” was originally cloned
-(copied) from the FontStruction “Symbol Font For ASL”
+*NOTE: “5Э.Ё=жДЯ | шрифт ржя” was originally cloned (copied)
+from the FontStruction “Symbol Font For ASL”
 (https://fontstruct.com/fontstructions/show/790283) by “aslfont”, which is
 licensed under a Creative Commons Attribution license
 (http://creativecommons.org/licenses/by/3.0/).
