@@ -687,16 +687,16 @@ span.rsl {
   font-size: 100%;
 }
 
+dt.rsl.medium {
+  font-size:   110%;
+}
+dt.rsl.big {
+  font-size:   120%;
+}
+
 .dd-small dd {
   white-space:nowrap;
   font-size: 65%;
-}
-
-.asl.medium {
-  font-size:   200%;
-}
-.asl.big {
-  font-size:   225%;
 }
 
 .asl.inline{
