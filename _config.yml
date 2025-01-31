@@ -1,2 +1,0 @@
-markdown: kramdown
-exclude: ['Gemfile.lock', 'Gemfile', 'dictionary', 's3']
