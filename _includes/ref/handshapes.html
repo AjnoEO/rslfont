@@ -1,13 +1,9 @@
+{% assign blocks = "а1хА 7ОэКЧо к2бЛя ш3П8Мч В4Ев5И есФС жШфТ УуюыГЫ инрРН" | split: " " %}
 <div class="boxshadow-p medium" style="font-family:monospace">
     <dl class="inline inline1">
-        <dt class="rsl">а 6</dt>         <dd>а 6</dd>
-        <dt class="rsl">1 х А</dt>       <dd>1 х А</dd>
-        <dt class="rsl">7 О э К Ч о</dt> <dd>7 О э К Ч о</dd>
-        <dt class="rsl">к 2 б Л я</dt>   <dd>к 2 б Л я</dd>
-        <dt class="rsl">ш 3 П 8 М ч</dt> <dd>ш 3 П 8 М ч</dd>
-        <dt class="rsl">В 4 н р Р Н</dt> <dd>В 4 н р Р Н</dd>
-        <dt class="rsl">в 5 С И Е</dt>   <dd>в 5 С И Е</dd>
-        <dt class="rsl">Ф с е ф Ш ж</dt> <dd>Ф с е ф Ш ж</dd>
-        <dt class="rsl">У у ю ы Г Ы и</dt> <dd>У у ю ы Г Ы и</dd>
+        {% for b in blocks %}
+        {% assign symbols = b | split: "" | join: " " %}
+        <dt class="rsl">{{symbols}}</dt><dd>{{symbols}}</dd>
+        {% endfor %}
     </dl>
 </div>
