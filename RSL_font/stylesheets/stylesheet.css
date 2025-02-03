@@ -184,6 +184,12 @@ pre, code, img, .boxshadow, .boxshadow-p
 
   box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
+.no-styling {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  box-shadow: none;
+}
 pre, code, .monospace {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
@@ -690,7 +696,7 @@ span.rsl {
 dt.rsl.medium {
   font-size:   110%;
 }
-dt.rsl.big {
+.medium dt span.rsl, dt.rsl.big {
   font-size:   120%;
 }
 

@@ -113,8 +113,8 @@
             {"id": 1466, "rsl": "(.)*6Б", "ru": "Лень"}
         ],
         "Вправо": [
+            {"id": 10030, "rsl": "5Ю", "ru": "Нет"},
             {"id": 1831, "rsl": "77Ю", "ru": "Готов"},
-            {"id": 410, "rsl": "5ЮЮ", "ru": "Привет"},
             {"id": 1709, "rsl": "(.)Ц1Ю", "ru": "Россия"},
             {"id": 9351, "rsl": "9Й0**НЮ", "ru": "Пыль"}
         ],
@@ -129,6 +129,42 @@
             {"id": 4947, "rsl": "(Ё)*4ЗЗ", "ru": "Петух"},
             {"id": 22656, "rsl": "9Ё0вЗ", "ru": "Раньше"},
             {"id": 5940, "rsl": "9.0ЦНЗ", "ru": "Лысый"}
+        ]
+    },
+    {
+        "Примеры": [
+            {"id": 199, "rsl": "чЭ.9.0ЦЦ.\"ч", "ru": "Чинить", "quizrslprompt": "ч9.0ЦЦч", "quizanswer": "Э..\""},
+            {"id": 1767, "rsl": "(.)**\".Л", "ru": "Смех", "quizrslprompt": "(.)**Л", "quizanswer": "\"."},
+            {"id": false, "rsl": "вЁ=Ц9Ё0Ц=Ёв", "ru": "Здравствуйте", "quizrslprompt": "вЦ9Ё0Цв", "quizanswer": "Ё==Ё"},
+            {"id": 518, "rsl": "вЁ--ЁвЗ", "ru": "Приглашать", "quizrslprompt": "ввЗ", "quizanswer": "Ё--Ё"},
+            {"id": 22440, "rsl": "(Ё)+=ЁР", "ru": "Болит голова", "quizrslprompt": "(Ё)+Р", "quizanswer": "=Ё"}
+        ],
+        "Не важна": [
+            {
+                "id": 648, "rsl": "еЭ.**.Эе", "ru": "Десять", "comment": "с ориентацией",
+                "quizrslprompt": "е**е", "quizanswer": "Э..Э"
+            },
+            {"id": false, "rsl": "е**е", "ru": "Десять", "comment": "без ориентации", "noquiz": true},
+            {
+                "id": 5733, "rsl": "\".6Б", "ru": "Неделя", "comment": "с ориентацией",
+                "quizrslprompt": "6Б", "quizanswer": "\"."
+            },
+            {"id": false, "rsl": "6Б", "ru": "Неделя", "comment": "без ориентации", "noquiz": true},
+            {
+                "id": 22555, "rsl": "9Й0*=Ёв", "ru": "Мой", "comment": "с ориентацией",
+                "quizrslprompt": "9Й0*в", "quizanswer": "=Ё"},
+            {"id": false, "rsl": "9Й0*в", "ru": "Мой", "comment": "без ориентации", "noquiz": true},
+            {
+                "id": 4947, "rsl": "(Ё)*.Э4ЗЗ", "ru": "Петух", "comment": "с ориентацией",
+                "quizrslprompt": "(Ё)*4ЗЗ", "quizanswer": ".Э"
+            },
+            {"id": false, "rsl": "(Ё)*4ЗЗ", "ru": "Петух", "comment": "без ориентации", "noquiz": true}
+        ],
+        "Важна": [
+            {"id": 8074, "rsl": ".Эв/", "ru": "Будет", "quizrslprompt": "в/", "quizanswer": ".Э"},
+            {"id": 7399, "rsl": ".\"в/", "ru": "Тип", "quizrslprompt": "в/", "quizanswer": ".\""},
+            {"id": 12114, "rsl": "1.=*=.1", "ru": "Точно", "quizrslprompt": "1*1", "quizanswer": ".==."},
+            {"id": 1744, "rsl": "1Э.*.Э1", "ru": "Встреча", "quizrslprompt": "1*1", "quizanswer": "Э..Э"}
         ]
     }
 ]

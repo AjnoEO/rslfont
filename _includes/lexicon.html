@@ -4,9 +4,21 @@
     {% for section in site.data.lexicon[page.lesson_num] %}
     <dl class="inline inline2b">
         {% for word in section %}
-        <dt class="rsl">{{word.rsl}}</dt><dd>{% include sign.html id=word.id word=word.ru %}</dd>
+        <dt class="rsl">{{word.rsl}}</dt><dd>{% include sign.html id=word.id word=word.ru comment=word.comment %}</dd>
         {% endfor %}
     </dl>
+    {% endfor %}
+</div>
+{% elsif include.key %}
+<div class="medium boxshadow-p" style="font-family:monospace">
+    {% for section in site.data.lexicon[page.lesson_num] %}
+    {% if section[0] == include.key %}
+    <dl class="inline inline2b">
+        {% for word in section[1] %}
+        <dt class="rsl">{{word.rsl}}</dt><dd>{% include sign.html id=word.id word=word.ru comment=word.comment %}</dd>
+        {% endfor %}
+    </dl>
+    {% endif %}
     {% endfor %}
 </div>
 {% else %}
@@ -15,7 +27,7 @@
     <div class="medium boxshadow-p" style="font-family:monospace">
     <dl class="inline inline2b">
         {% for word in section[1] %}
-        <dt class="rsl">{{word.rsl}}</dt><dd>{% include sign.html id=word.id word=word.ru %}</dd>
+        <dt class="rsl">{{word.rsl}}</dt><dd>{% include sign.html id=word.id word=word.ru comment=word.comment %}</dd>
         {% endfor %}
     </dl>
     </div>

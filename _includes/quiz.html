@@ -1,13 +1,17 @@
 {% assign type = site.data.lexicon[page.lesson_num] | inspect | split: "" | first %}
 {% assign num = 1 %}
-<div class="boxshadow-p" style="font-family:monospace">
+<div class="boxshadow-p medium" style="font-family:monospace">
     <dl class="inline inline2b">
         {% for section in site.data.lexicon[page.lesson_num] %}
             {% if type == '{' %}{% assign iter = section[1] %}{% else %}{% assign iter = section %}{% endif %}
-            {% for word in iter %}
-            <dt>{% include sign.html id=word.id word=word.ru no_quotes=true %}</dt><dd><input class="quiz" {% if num == 1 %}placeholder="{{word.rsl}}"{% endif %} data-answer="{{word.rsl}}"></dd>
-            {% if page.lesson_num > 1 %}{% assign num = num | plus: 1 %}{% endif %}
-            {% endfor %}
+            {% for word in iter %}{% unless word.noquiz %}
+                {% assign answer = word.quizanswer | default: word.rsl | escape %}
+                <dt>
+                    {%- include sign.html id=word.id word=word.ru no_quotes=true -%}
+                    {%- if word.quizrslprompt %}<span class="rsl">{{word.quizrslprompt}}</span>{% endif -%}
+                </dt><dd><input class="quiz center" {% if num == 1 %}placeholder="{{answer}}"{% endif %} data-answer="{{answer}}"></dd>
+                {% if page.lesson_num > 1 %}{% assign num = num | plus: 1 %}{% endif %}
+            {% endunless %}{% endfor %}
         {% endfor %}
     </dl>
 </div>
