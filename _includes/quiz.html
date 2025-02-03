@@ -1,7 +1,7 @@
 {% assign type = site.data.lexicon[page.lesson_num] | inspect | split: "" | first %}
 {% assign num = 1 %}
-<div class="boxshadow-p medium" style="font-family:monospace">
-    <dl class="inline inline2b">
+<div class="boxshadow-p" style="font-family:monospace">
+    <dl class="inline inline2b medium">
         {% for section in site.data.lexicon[page.lesson_num] %}
             {% if type == '{' %}{% assign iter = section[1] %}{% else %}{% assign iter = section %}{% endif %}
             {% for word in iter %}{% unless word.noquiz %}
