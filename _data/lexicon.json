@@ -161,10 +161,12 @@
             {"id": false, "rsl": "(Ё)*4ЗЗ", "ru": "Петух", "comment": "без ориентации", "noquiz": true}
         ],
         "Важна": [
+            {"id": 1744, "rsl": "1Э.*.Э1", "ru": "Встреча", "quizrslprompt": "1*1", "quizanswer": "Э..Э"},
+            {"id": 12114, "rsl": "1.=*=.1", "ru": "Точно", "quizrslprompt": "1*1", "quizanswer": ".==."},
             {"id": 8074, "rsl": ".Эв/", "ru": "Будет", "quizrslprompt": "в/", "quizanswer": ".Э"},
             {"id": 7399, "rsl": ".\"в/", "ru": "Тип", "quizrslprompt": "в/", "quizanswer": ".\""},
-            {"id": 12114, "rsl": "1.=*=.1", "ru": "Точно", "quizrslprompt": "1*1", "quizanswer": ".==."},
-            {"id": 1744, "rsl": "1Э.*.Э1", "ru": "Встреча", "quizrslprompt": "1*1", "quizanswer": "Э..Э"}
+            {"id": 7574, "rsl": "9Й0**=.аЮ", "ru": "Алкоголик", "quizrslprompt": "9Й0**аЮ", "quizanswer": "=Ё"},
+            {"id": 3189, "rsl": "9Й0**.ЭаЮ", "ru": "Терапевт", "quizrslprompt": "9Й0**аЮ", "quizanswer": ".Э"}
         ]
     }
 ]
