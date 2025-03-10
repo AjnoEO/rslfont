@@ -628,8 +628,8 @@ ul.column {
 .rsl {
   font-family: RSL-Font;
 }
-span.rsl {
-  vertical-align: -10%;
+span.rsl, span.asl {
+  vertical-align: bottom;
 }
 
 .asl {
