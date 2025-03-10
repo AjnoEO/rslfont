@@ -40,9 +40,6 @@ ol, ul {
   list-style: none;
 }
 
-blockquote, q {
-}
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -395,10 +392,6 @@ Full-Width Styles
   border-bottom: 1px solid #111;
 }
 
-.main_content {
-
-}
-
 #footer_wrap {
   background: #212121;
 }
@@ -453,6 +446,7 @@ a.selected {
   text-shadow: rgba(0,0,0,.2) 0px 5px 10px, rgba(0,0,0,.2) 0px 4px 2px;
   text-decoration: underline;
   padding: 0;
+  box-shadow: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   -o-box-shadow: none;
