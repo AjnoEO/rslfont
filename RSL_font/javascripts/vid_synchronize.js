@@ -4,11 +4,11 @@ const text = document.getElementById('text');
 
 function isVisible(element) {
   const rect = element.getBoundingClientRect();
+  const boxRect = text.parentElement.getBoundingClientRect();
+  console.log(rect)
   return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    rect.top >= boxRect.top &&
+    rect.bottom <= boxRect.bottom - 10
   );
 }
 
