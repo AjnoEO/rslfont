@@ -1,0 +1,186 @@
+---
+layout: default
+selected: inanutshell
+title: Краткая справка
+toplinks: true
+javascripts: 
+- javascripts/jquery.min.js
+- javascripts/jquery.cookie.js
+- javascripts/quickref.js
+---
+<h3 id="InANtushell">Краткая справка</h3>
+
+<p>Здесь представлена краткая справка о том, как записываются жесты в шрифте РЖЯ. Для более детального описания обратитесь к <a href="reference.html">полной справке</a>.</p>
+
+<h4 id="SignStructure">Структура записанного жеста</h4>
+
+<div class="floatr medium" style="width:60%">
+    <dl class="boxshadow-p inline inline1b">
+        <dt class="blue rsl">."Ч</dt> <dd>Указ. и большой палец сомкнуты, ладонь вперёд, вертикально</dd>
+        <dt class="red rsl">_</dt>    <dd>Движение вниз</dd>
+        <dt class="blue rsl">Ё=7</dt> <dd>Указ. и большой палец разомкнуты, ладонь вперёд, на боку</dd>
+        <dt class="red rsl">_</dt>    <dd>Движение вниз</dd>
+        <dt class="blue rsl">Ё=Ч</dt> <dd>Указ. и большой палец сомкнуты, ладонь вперёд, на боку</dd>
+        <dt class="rsl" style="width:50%">."Ч_Ё=7_Ё=Ч</dt> <dd style="width:50%">{% include sign.html id=1773 word="Луна" %}</dd>
+    </dl>
+</div>
+
+<p>Для записи на шрифте РЖЯ жест в первую очередь делится <strong class="blue">кадры</strong> и <strong class="red">таймлайны</strong>. В кадре изображается расположение рук в пространстве в конкретный момент исполнения жеста. Таймлайны располагаются между кадрами и указывают на движения рук в пространстве между этими кадрами.</p>
+
+<br style="clear:both;">
+
+<div class="floatl medium" style="width:60%">
+    <dl class="boxshadow-p inline inline1b">
+        <dt class="rsl">(ЁЁ)</dt>     <dd>Положение на стороне лба</dd>
+        <dt class="rsl">*</dt>        <dd>Соприкосновение</dd>
+        <dt class="rsl">.Э</dt>       <dd>Ладонь влево, вертикально</dd>
+        <dt class="rsl">1</dt>        <dd>Выпрямленный указательный палец</dd>
+        <dt class="rsl">(ЁЁ)*.Э1</dt> <dd>{% include sign.html id=14610 word="Думать" %}</dd>
+    </dl>
+</div>
+
+<p><strong class="blue">Кадры</strong> внешне примерно изображают то, что видит <strong>говорящий</strong>. Поэтому локализация изображается слева от правой руки, а тип контакта размещается между локализацией и рукой. Для правой руки сначала изображается ориентация (опять же, от лица исполняющего жест), а потом конфигурация.</p>
+
+<br style="clear:both;">
+
+<div class="floatr medium" style="width:70%">
+    <dl class="boxshadow-p inline inline1b">
+        <dt class="rsl">1</dt>          <dd>Выпрямленный указательный палец</dd>
+        <dt class="rsl">9Ёв0</dt>       <dd>Место: кончики пальцев</dd>
+        <dt class="rsl">".</dt>         <dd>Ладонь вперёд, вертикально</dd>
+        <dt class="rsl">*</dt>          <dd>Соприкосновение</dd>
+        <dt class="rsl">=Ё</dt>         <dd>Ладонь к себе, на боку</dd>
+        <dt class="rsl">в</dt>          <dd>Раскрытая ладонь с сомкнутыми пальцами</dd>
+        <dt class="rsl" style="width:50%">9Ёв01".*=Ёв</dt> <dd style="width:50%">{% include sign.html id=4023 word="Флаг" %}</dd>
+        <dt class="rsl" style="width:50%">9Ё10".*=Ёв</dt> <dd style="width:50%">{% include sign.html id=4023 word="Флаг" %}</dd>
+    </dl>
+</div>
+
+<p>В двуручных кадрах левая рука изображается симметрично правой: сначала конфигурация, потом ориентация, слева от локализации и правой руки. Если левая рука является локализацией для правой, точное положение относительно руки можно указать слева от левой конфигурации.</p>
+
+<br style="clear:both;">
+
+<p><strong class="red">Таймлайны</strong> обозначают направление и характер движения. Символы с <span class="rsl">?</span> идут в начале. При повторяющемся движении можно просто записать соответствующую стрелку дважды</p>
+
+<div class="medium">
+    <dl class="boxshadow-p inline inline3">
+        <dt class="rsl">Б</dt>  <dd>Влево</dd>
+        <dt class="rsl">ЗЗ</dt> <dd>Дважды назад</dd>
+        <dt class="rsl">ЮЬ</dt> <dd>Вправо-вверх</dd>
+        <dt class="rsl">_Д</dt> <dd>Круговое вниз</dd>
+        <dt class="rsl">?</dt>  <dd>Согнуть пальцы</dd>
+        <dt class="rsl">??</dt> <dd>Дрожать пальцами</dd>
+    </dl>
+</div>
+
+<div class="floatr medium" style="width:60%">
+    <dl class="boxshadow-p inline inline1b">
+        <dt class="rsl">9:0%Й</dt> <dd>Веки широко раскрыты</dd>
+        <dt class="rsl">:%()</dt>  <dd>Артикуляция А</dd>
+        <dt class="rsl">:%Ъ(</dt>  <dd>Артикуляция Ф</dd>
+        <dt class="rsl">Ж..Ж</dt>  <dd>Ладони вниз, пальцами от себя</dd>
+        <dt class="rsl">аа</dt>    <dd>Руки сжаты в кулаки</dd>
+        <dt class="rsl">_</dt>     <dd>Движение вниз</dd>
+        <dt class="rsl">09</dt>    <dd>Симметричное движение</dd>
+        <dt class="rsl" style="width:70%">9:0%() 9:0%Ъ( аЖ..Жа_09</dt> <dd style="width:30%">{% include sign.html id=12164 word="Много" %}</dd>
+        <dt class="rsl" style="width:70%">9:0%()%Ъ( аа_09</dt> <dd style="width:30%">{% include sign.html id=12164 word="Много" %}</dd>
+    </dl>
+</div>
+
+<p>Если не указано обратного, считается, что двигается только ведущая рука. При помощи специальных символов можно указать, как движется неведущая рука относительно ведущей.</p>
+
+<p>Немануальные компоненты указываются перед жестом отдельной последовательностью символов.</p>
+
+<p>Если вы уверены, что вас поймут, лишние компоненты можно убирать, чтобы сократить запись. Например ориентацию часто можно не указывать.</p>
+
+<br style="clear:both;">
+
+<h4 id="HowToType">Как записывать жесты</h4>
+
+<nav id="QuickReferenceNav">
+  <ul class="inline">
+    <li><a data-tab-for="KeyboardLayout" href="#KeyboardLayout">Раскладка</a></li>
+    <li><a data-tab-for="Handshapes" href="#Handshapes">Конфигурация</a></li>
+    <li><a data-tab-for="Orientation" href="#Orientation">Ориентация</a></li>
+    <li><a data-tab-for="Locations" href="#Locations">Локализация</a></li>
+    <li><a data-tab-for="Motion" href="#Motion">Движение</a></li>
+    <li><a data-tab-for="OtherModifiers" href="#OtherModifiers">Прочее</a></li>
+  </ul>
+</nav>
+
+<div data-content-for="KeyboardLayout">
+  <h5 id="KeyboardLayout">Раскладка</h5>
+  {% include ref/keyboard_layout.html %}
+</div>
+
+<div data-content-for="Handshapes">
+  <h5 id="Handshapes">Конфигурация</h5>
+  {% include ref/handshapes.html %}
+</div>
+
+<div data-content-for="Orientation">
+  <h5 id="Orientation">Ориентация</h5>
+  {% include ref/symbols.html blocks='Э-"=Ж% .Ё' %}
+  <label style="display:block;font-style:italic;clear:both">Самые частые варианты поворота рук</label>
+  {% include ref/orientation.html %}
+</div>
+
+<div data-content-for="Locations">
+  <h5 id="Locations">Локализация</h5>
+  {% include ref/symbols.html blocks='()90 .ЙЁ' %}
+  <div style="text-align:center">
+    <a href="images/locations4.png" target="_blank"><img src="images/locations4.png" style="margin:auto"></a>
+  </div>
+</div>
+
+<div data-content-for="Motion">
+  <h5 id="Motion">Движение</h5>
+
+  {% include ref/symbols.html blocks='БЮЬ_/З Д!;Ц*+ )09Я' %}
+
+  <h6 id="Directions">Направление</h6>
+  <div class="boxshadow-p medium">
+    <dl class="inline inline3b">
+      <dt class="rsl">Ь</dt>   <dd>Вверх</dd>
+      <dt class="rsl">/</dt>   <dd>Вперёд</dd>
+      <dt class="rsl">Ю</dt>   <dd>Вправо</dd>
+      <dt class="rsl">_</dt>   <dd>Вниз</dd>
+      <dt class="rsl">З</dt>   <dd>Назад</dd>
+      <dt class="rsl">Б</dt>   <dd>Влево</dd>
+      <dt class="rsl">Д</dt>   <dd>Круговое</dd>
+    </dl>
+  </div>
+
+  <h6 id="Contact">Тип контакта</h6>
+  {% include ref/contact.html columns=3 examples=false %}
+
+  <h6 id="NonDominant">Движение неведущей руки</h6>
+  {% include ref/non-dominant.html columns=2 %}
+</div>
+
+<div data-content-for="OtherModifiers">
+  <h5 id="OtherModifiers">Прочие модификации</h5>
+  {% include ref/modifiers.html %}
+
+  <h5>Немануальные компоненты</h5>
+  <div class="boxshadow-p medium">
+    <dl class="inline inline2">
+      <dt class="rsl">:%Й</dt>        <dd>Нейтральное выражение</dd>
+      <dt class="rsl">:%09</dt>       <dd>Дрожать губами (брр)</dd>
+      <dt class="rsl">:%()%ЪХ</dt>    <dd>АП</dd>
+      <dt class="rsl">:%Ъ(%ЪЭХ%*</dt> <dd>ВНУ</dd>
+      <dt class="rsl">(:%Й</dt>       <dd>&laquo;Сделал?&raquo;</dd>
+      <dt class="rsl">0:%Й</dt>       <dd>&laquo;Что сделал?&raquo;</dd>
+      <dt class="rsl">0:9%Й</dt>      <dd>Неприязнь</dd>
+      <dt class="rsl">(9:0%()</dt>    <dd>Удивление</dd>
+      <dt class="rsl">Ъ:Х%ЪХ</dt>     <dd>Подозрение</dd>
+      <dt class="rsl">Ъ:%9ЪХ0</dt>    <dd>Непринуждённость</dd>
+    </dl>
+    <dl class="inline inline2">
+      <dt class="rsl">(__)</dt>       <dd>Кивать головой</dd>
+      <dt class="rsl">(БЮ)</dt>       <dd>Мотать головой</dd>
+      <dt class="rsl">9Б0</dt>        <dd>Повернуться телом влево</dd>
+      <dt class="rsl">9Ь0</dt>        <dd>Пожать плечами</dd>
+    </dl>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+{% assign blocks = include.blocks | split: " " %}
+<div class="boxshadow-p medium" style="font-family:monospace">
+    <dl class="inline inline1">
+        {% for b in blocks %}
+        {% assign symbols = b | split: "" | join: " " %}
+        <dt class="rsl">{{symbols}}</dt><dd>{{symbols}}</dd>
+        {% endfor %}
+    </dl>
+</div>

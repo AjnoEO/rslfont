@@ -1,4 +1,5 @@
-<p class="{% if include.rsl %}rsl{% endif %} keyboard medium {% if include.highlight %}gray{% endif %}" style="text-align:center;">
+<div style="overflow-y:scroll;">
+<p class="{% if include.rsl %}rsl{% endif %} keyboard medium {% if include.highlight %}gray{% endif %}" style="max-width:200%;text-align:center;">
     <span style="background-color:#fff;border-top:4px solid #fff;border-bottom:2px solid #fff;">
         {% for row in site.data.keys %}
         &nbsp;{% for pair in row -%}
@@ -10,3 +11,4 @@
         {% endfor %}
     </span>
 </p>
+</div>
