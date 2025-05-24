@@ -1,6 +1,5 @@
-Symbol Font For ASL
--------------------
+# Шрифт для записи РЖЯ
 
-Read about Symbol Font For ASL here: <http://aslfont.github.com/Symbol-Font-For-ASL/>
+Система записи для русского жестового языка. Информация: https://ajnoeo.github.io/rslfont. 
 
-Discuss this project here: <https://github.com/aslfont/aslfont.github.com/issues>
+Система основана на проекте ASL Font: https://github.com/aslfont/aslfont.github.com.
